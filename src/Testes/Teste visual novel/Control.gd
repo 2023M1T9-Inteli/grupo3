@@ -12,7 +12,7 @@ var expression
 func _ready():
 	load_dialogo()
 	
-func _physics_process(delta):
+func _process(delta):
 	if active:
 		
 		if Input.is_action_just_pressed("ui_accept"):

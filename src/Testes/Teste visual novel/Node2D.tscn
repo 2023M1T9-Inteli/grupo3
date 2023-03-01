@@ -1,19 +1,20 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://pngee.png" type="Texture" id=1]
-[ext_resource path="res://6114988.jpg" type="Texture" id=2]
+[ext_resource path="res://leticia_npc_definitivo.png" type="Texture" id=1]
+[ext_resource path="res://cenário_letícia.png" type="Texture" id=2]
 [ext_resource path="res://Control.gd" type="Script" id=3]
 [ext_resource path="res://Dialogo.gd" type="Script" id=4]
+[ext_resource path="res://caixa_texto_g_720.png" type="Texture" id=5]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="6114988" type="Sprite" parent="."]
-position = Vector2( 504, 310 )
-scale = Vector2( 0.205664, 0.221181 )
+[node name="CenárioLetícia" type="Sprite" parent="."]
+position = Vector2( 1250.39, 451.5 )
+scale = Vector2( 1.00333, 1.00333 )
 texture = ExtResource( 2 )
 
 [node name="1" type="Position2D" parent="."]
-position = Vector2( 116, 493 )
+position = Vector2( 431, 505 )
 
 [node name="Dialogo" type="Node" parent="."]
 script = ExtResource( 4 )
@@ -23,35 +24,36 @@ margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 3 )
 
-[node name="TextBox" type="ColorRect" parent="Control"]
-margin_left = 64.0
-margin_top = 453.0
-margin_right = 957.0
-margin_bottom = 581.0
-color = Color( 1, 0.968627, 0.866667, 0.694118 )
+[node name="TextBox" type="Sprite" parent="Control"]
+position = Vector2( 1020, 257 )
+scale = Vector2( 1.13754, 1.13754 )
+texture = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="Control/TextBox"]
-margin_left = 14.0
-margin_top = 5.0
-margin_right = 87.0
-margin_bottom = 40.0
+margin_left = -259.723
+margin_top = -114.941
+margin_right = -215.723
+margin_bottom = -95.941
+rect_scale = Vector2( 2, 2 )
 custom_colors/font_color = Color( 0.34902, 0.266667, 0.266667, 1 )
 text = "Name"
 align = 1
 valign = 1
 
 [node name="Tween" type="Tween" parent="Control/TextBox"]
+playback_speed = 1.5
+playback/speed = 1.5
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/TextBox"]
-margin_left = 14.0
-margin_top = 40.0
-margin_right = 877.0
-margin_bottom = 115.0
+margin_left = -260.211
+margin_top = -72.0854
+margin_right = 24.7894
+margin_bottom = 15.9146
+rect_scale = Vector2( 2, 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 
-[node name="Pngee" type="Sprite" parent="."]
-position = Vector2( 233, 286 )
-scale = Vector2( 0.178441, 0.189028 )
+[node name="Pngegg" type="Sprite" parent="Control"]
+position = Vector2( 431, 505 )
 texture = ExtResource( 1 )
 
 [connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]

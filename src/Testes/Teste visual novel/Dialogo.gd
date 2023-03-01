@@ -2,7 +2,7 @@ extends Node
 
 var dialogo_1 = [
 	{
-		"Name": "Kubayashi",
+		"Name": "Letícia",
 		"Expression": "Happy",
 		"Position": "1",
 		"Choices": ["", ""],
@@ -16,7 +16,7 @@ var dialogo_1 = [
 		"Text": "Desculpe o atraso!",
 	},
 	{
-		"Name": "Kubayashi",
+		"Name": "Letícia",
 		"Expression": "Happy",
 		"Position": "1",
 		"Choices": ["", ""],
