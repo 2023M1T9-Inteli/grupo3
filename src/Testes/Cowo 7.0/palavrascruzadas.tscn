@@ -1,0 +1,413 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label0" type="Label" parent="."]
+margin_left = 585.0
+margin_top = 71.0
+margin_right = 625.0
+margin_bottom = 85.0
+text = "0"
+
+[node name="LineEdit00" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 87.0
+margin_right = 635.0
+margin_bottom = 147.0
+focus_neighbour_bottom = NodePath("../LineEdit01")
+max_length = 1
+
+[node name="LineEdit01" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 152.0
+margin_right = 635.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit12")
+focus_neighbour_top = NodePath("../LineEdit00")
+focus_neighbour_right = NodePath("../LineEdit14")
+focus_neighbour_bottom = NodePath("../LineEdit02")
+max_length = 1
+
+[node name="LineEdit02" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 217.0
+margin_right = 635.0
+margin_bottom = 277.0
+focus_neighbour_top = NodePath("../LineEdit01")
+focus_neighbour_bottom = NodePath("../LineEdit03")
+max_length = 1
+
+[node name="LineEdit03" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 282.0
+margin_right = 635.0
+margin_bottom = 342.0
+focus_neighbour_top = NodePath("../LineEdit02")
+focus_neighbour_bottom = NodePath("../LineEdit04")
+max_length = 1
+
+[node name="LineEdit04" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 347.0
+margin_right = 635.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit33")
+focus_neighbour_top = NodePath("../LineEdit03")
+focus_neighbour_right = NodePath("../LineEdit35")
+focus_neighbour_bottom = NodePath("../LineEdit05")
+max_length = 1
+
+[node name="LineEdit05" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 412.0
+margin_right = 635.0
+margin_bottom = 472.0
+focus_neighbour_top = NodePath("../LineEdit04")
+focus_neighbour_bottom = NodePath("../LineEdit06")
+max_length = 1
+
+[node name="LineEdit06" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 477.0
+margin_right = 635.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit44")
+focus_neighbour_top = NodePath("../LineEdit05")
+focus_neighbour_right = NodePath("../LineEdit46")
+focus_neighbour_bottom = NodePath("../LineEdit07")
+max_length = 1
+
+[node name="LineEdit07" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 542.0
+margin_right = 635.0
+margin_bottom = 602.0
+focus_neighbour_top = NodePath("../LineEdit06")
+focus_neighbour_bottom = NodePath("../LineEdit08")
+max_length = 1
+
+[node name="LineEdit08" type="LineEdit" parent="."]
+margin_left = 575.0
+margin_top = 607.0
+margin_right = 635.0
+margin_bottom = 667.0
+focus_neighbour_top = NodePath("../LineEdit07")
+max_length = 1
+
+[node name="Label1" type="Label" parent="."]
+margin_left = 363.0
+margin_top = 172.0
+margin_right = 403.0
+margin_bottom = 189.0
+text = "1"
+
+[node name="LineEdit10" type="LineEdit" parent="."]
+margin_left = 380.0
+margin_top = 152.0
+margin_right = 440.0
+margin_bottom = 212.0
+focus_neighbour_right = NodePath("../LineEdit11")
+max_length = 1
+
+[node name="LineEdit11" type="LineEdit" parent="."]
+margin_left = 445.0
+margin_top = 152.0
+margin_right = 505.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit10")
+focus_neighbour_right = NodePath("../LineEdit12")
+max_length = 1
+
+[node name="LineEdit12" type="LineEdit" parent="."]
+margin_left = 511.0
+margin_top = 152.0
+margin_right = 571.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit11")
+focus_neighbour_right = NodePath("../LineEdit01")
+max_length = 1
+
+[node name="LineEdit14" type="LineEdit" parent="."]
+margin_left = 640.0
+margin_top = 152.0
+margin_right = 700.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit01")
+focus_neighbour_right = NodePath("../LineEdit15")
+max_length = 1
+
+[node name="LineEdit15" type="LineEdit" parent="."]
+margin_left = 705.0
+margin_top = 152.0
+margin_right = 765.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit14")
+focus_neighbour_right = NodePath("../LineEdit16")
+max_length = 1
+
+[node name="LineEdit16" type="LineEdit" parent="."]
+margin_left = 770.0
+margin_top = 152.0
+margin_right = 830.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit15")
+focus_neighbour_right = NodePath("../LineEdit17")
+max_length = 1
+
+[node name="LineEdit17" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 152.0
+margin_right = 895.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit16")
+focus_neighbour_top = NodePath("../LineEdit21")
+focus_neighbour_right = NodePath("../LineEdit18")
+focus_neighbour_bottom = NodePath("../LineEdit23")
+max_length = 1
+
+[node name="LineEdit18" type="LineEdit" parent="."]
+margin_left = 900.0
+margin_top = 152.0
+margin_right = 960.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit17")
+focus_neighbour_right = NodePath("../LineEdit19")
+max_length = 1
+
+[node name="LineEdit19" type="LineEdit" parent="."]
+margin_left = 965.0
+margin_top = 152.0
+margin_right = 1025.0
+margin_bottom = 212.0
+focus_neighbour_left = NodePath("../LineEdit18")
+max_length = 1
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 233.0
+margin_top = 501.0
+margin_right = 273.0
+margin_bottom = 515.0
+text = "4"
+
+[node name="LineEdit40" type="LineEdit" parent="."]
+margin_left = 250.0
+margin_top = 477.0
+margin_right = 310.0
+margin_bottom = 537.0
+focus_neighbour_right = NodePath("../LineEdit41")
+max_length = 1
+
+[node name="LineEdit41" type="LineEdit" parent="."]
+margin_left = 315.0
+margin_top = 477.0
+margin_right = 375.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit40")
+focus_neighbour_top = NodePath("../LineEdit42")
+max_length = 1
+
+[node name="LineEdit42" type="LineEdit" parent="."]
+margin_left = 380.0
+margin_top = 477.0
+margin_right = 440.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit41")
+focus_neighbour_right = NodePath("../LineEdit43")
+max_length = 1
+
+[node name="LineEdit43" type="LineEdit" parent="."]
+margin_left = 445.0
+margin_top = 477.0
+margin_right = 505.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit42")
+focus_neighbour_right = NodePath("../LineEdit44")
+max_length = 1
+
+[node name="LineEdit44" type="LineEdit" parent="."]
+margin_left = 510.0
+margin_top = 477.0
+margin_right = 570.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit43")
+focus_neighbour_right = NodePath("../LineEdit06")
+max_length = 1
+
+[node name="LineEdit46" type="LineEdit" parent="."]
+margin_left = 640.0
+margin_top = 477.0
+margin_right = 700.0
+margin_bottom = 537.0
+focus_neighbour_left = NodePath("../LineEdit06")
+max_length = 1
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 303.0
+margin_top = 370.0
+margin_right = 343.0
+margin_bottom = 384.0
+text = "3"
+
+[node name="LineEdit30" type="LineEdit" parent="."]
+margin_left = 315.0
+margin_top = 347.0
+margin_right = 375.0
+margin_bottom = 407.0
+focus_neighbour_right = NodePath(".")
+max_length = 1
+
+[node name="LineEdit31" type="LineEdit" parent="."]
+margin_left = 380.0
+margin_top = 347.0
+margin_right = 440.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit30")
+focus_neighbour_right = NodePath("../LineEdit32")
+max_length = 1
+
+[node name="LineEdit32" type="LineEdit" parent="."]
+margin_left = 445.0
+margin_top = 347.0
+margin_right = 505.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit31")
+focus_neighbour_right = NodePath("../LineEdit33")
+max_length = 1
+
+[node name="LineEdit33" type="LineEdit" parent="."]
+margin_left = 510.0
+margin_top = 347.0
+margin_right = 570.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit32")
+focus_neighbour_right = NodePath("../LineEdit04")
+max_length = 1
+
+[node name="LineEdit35" type="LineEdit" parent="."]
+margin_left = 640.0
+margin_top = 347.0
+margin_right = 700.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit04")
+focus_neighbour_right = NodePath("../LineEdit36")
+max_length = 1
+
+[node name="LineEdit36" type="LineEdit" parent="."]
+margin_left = 705.0
+margin_top = 347.0
+margin_right = 765.0
+margin_bottom = 407.0
+focus_neighbour_left = NodePath("../LineEdit35")
+max_length = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 844.0
+margin_top = 5.0
+margin_right = 884.0
+margin_bottom = 19.0
+text = "2"
+
+[node name="LineEdit20" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 22.0
+margin_right = 895.0
+margin_bottom = 82.0
+rect_pivot_offset = Vector2( -28, -22 )
+focus_neighbour_bottom = NodePath("../LineEdit21")
+max_length = 1
+
+[node name="LineEdit21" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 87.0
+margin_right = 895.0
+margin_bottom = 147.0
+rect_pivot_offset = Vector2( -28, -87 )
+focus_neighbour_top = NodePath("../LineEdit20")
+focus_neighbour_bottom = NodePath("../LineEdit17")
+max_length = 1
+
+[node name="LineEdit23" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 217.0
+margin_right = 895.0
+margin_bottom = 277.0
+rect_pivot_offset = Vector2( -28, -152 )
+focus_neighbour_top = NodePath("../LineEdit17")
+focus_neighbour_bottom = NodePath("../LineEdit24")
+max_length = 1
+
+[node name="LineEdit24" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 282.0
+margin_right = 895.0
+margin_bottom = 342.0
+rect_pivot_offset = Vector2( -28, -217 )
+focus_neighbour_top = NodePath("../LineEdit23")
+focus_neighbour_bottom = NodePath("../LineEdit25")
+max_length = 1
+
+[node name="LineEdit25" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 347.0
+margin_right = 895.0
+margin_bottom = 407.0
+rect_pivot_offset = Vector2( -28, -282 )
+focus_neighbour_top = NodePath("../LineEdit24")
+focus_neighbour_bottom = NodePath("../LineEdit26")
+max_length = 1
+
+[node name="LineEdit26" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 412.0
+margin_right = 895.0
+margin_bottom = 472.0
+rect_pivot_offset = Vector2( -28, -347 )
+focus_neighbour_top = NodePath("../LineEdit25")
+focus_neighbour_bottom = NodePath("../LineEdit27")
+max_length = 1
+
+[node name="LineEdit27" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 477.0
+margin_right = 895.0
+margin_bottom = 537.0
+rect_pivot_offset = Vector2( -28, -217 )
+focus_neighbour_top = NodePath("../LineEdit26")
+focus_neighbour_bottom = NodePath("../LineEdit28")
+max_length = 1
+
+[node name="LineEdit28" type="LineEdit" parent="."]
+margin_left = 835.0
+margin_top = 542.0
+margin_right = 895.0
+margin_bottom = 602.0
+rect_pivot_offset = Vector2( -28, -282 )
+focus_neighbour_top = NodePath("../LineEdit27")
+max_length = 1
+
+[node name="Label" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 761.0
+margin_bottom = 103.0
+text = "0. A comunicação _______________ é oposta à comunicação assertiva, usando a linguagem de forma hostil e ameaçadora.
+1. Uma característica importante na comunicação não agressiva é conseguir ouvir sem __________. 
+2.Uma habilidade importante é a capacidade de lidar com ___________ de forma calma e respeitosa.
+3. A expressão ________ é um pilar importante da CNV.
+4. A chave para uma comunicação não agressiva é a _______. 
+"
+
+[node name="Verificar" type="Button" parent="."]
+margin_left = 721.0
+margin_top = 457.0
+margin_right = 775.0
+margin_bottom = 519.0
+text = "Verificar"
+
+[node name="Resultados" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 138.0
+margin_right = 52.0
+margin_bottom = 152.0
+
+[connection signal="pressed" from="Verificar" to="." method="_on_Verificar_pressed"]
