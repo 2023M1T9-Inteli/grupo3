@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WhatsApp-Audio-2023-03-01-at-19.03.58.mp3-06a57151f90054b5bc0ba5da4f6bd66e.mp3str"
+
+[deps]
+
+source_file="res://WhatsApp-Audio-2023-03-01-at-19.03.58.mp3"
+dest_files=[ "res://.import/WhatsApp-Audio-2023-03-01-at-19.03.58.mp3-06a57151f90054b5bc0ba5da4f6bd66e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
