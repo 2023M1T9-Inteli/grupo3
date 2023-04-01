@@ -290,7 +290,7 @@ func _on_Btn_C_pressed() -> void:
 #Função executada ao pressionar o botão Email
 func _on_Email_pressed() -> void:
 	#Leva o jogador para a cena do Email
-	get_tree().change_scene_to(load("res://src/Minigames/Email/email1.tscn"))
+	get_tree().change_scene_to(load("res://src/Minigames/Email.tscn"))
 
 
 func _on_TextureButton_pressed() -> void:

@@ -18,7 +18,6 @@
 [ext_resource path="res://Dialogo.gd" type="Script" id=16]
 [ext_resource path="res://src/Facundes/ControlC2Facundes.gd" type="Script" id=17]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="CenárioSrfacundes" type="Sprite" parent="."]

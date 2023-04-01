@@ -528,7 +528,7 @@ var dialogo_12 = [
 			"Acho que posso tentar, o prazo é muito curto…",
 			"Acho isso muito injusto, mas tudo bem.",
 			],
-		"Text": "Em  10 minutos nosso cliente precisa de todos estes dados. Neste caso, já que você não soube se comunicar da melhor forma com seu parceiro, você mesmo irá entregar esta tarefa. Estamos entendidos?",
+		"Text": "Em 10 minutos nosso cliente precisa de todos estes dados. Neste caso, já que você não soube se comunicar da melhor forma com seu parceiro, você mesmo irá entregar esta tarefa. Estamos entendidos?",
 		
 		"Response": [""],
 	},
