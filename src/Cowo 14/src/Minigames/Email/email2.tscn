@@ -1,0 +1,612 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/minigame email/button_vermelho.png" type="Texture" id=1]
+[ext_resource path="res://assets/minigame email/tres_riscos_azul.png" type="Texture" id=2]
+[ext_resource path="res://assets/minigame email/button_azul.png" type="Texture" id=3]
+[ext_resource path="res://assets/minigame email/planofundo.png" type="Texture" id=4]
+[ext_resource path="res://assets/minigame email/bloco_texto.png" type="Texture" id=5]
+[ext_resource path="res://assets/minigame email/button_prox.png" type="Texture" id=6]
+[ext_resource path="res://assets/minigame email/simon_npc_circulo.png" type="Texture" id=7]
+[ext_resource path="res://assets/minigame email/button_enviar.png" type="Texture" id=8]
+[ext_resource path="res://src/Minigames/Email/email2.gd" type="Script" id=9]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Planofundo" type="Sprite" parent="."]
+position = Vector2( 1250, 585 )
+texture = ExtResource( 4 )
+
+[node name="TresRiscosAzul" type="Sprite" parent="."]
+position = Vector2( 418, 83 )
+rotation = -0.34383
+scale = Vector2( 0.414, 0.383 )
+texture = ExtResource( 2 )
+
+[node name="LabelAvisoClique" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1423.0
+margin_top = 526.0
+margin_right = 1704.0
+margin_bottom = 570.0
+rect_scale = Vector2( 3, 3 )
+text = "Clique em cada parte
+do email para construí-lo"
+align = 1
+valign = 1
+
+[node name="LabelTitulo" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 142.0
+margin_top = 85.0
+margin_right = 423.0
+margin_bottom = 129.0
+rect_scale = Vector2( 3, 3 )
+text = "Escreva um email de feedback para o Simon"
+autowrap = true
+
+[node name="ButtonEnviar" type="Sprite" parent="."]
+position = Vector2( -235, 517 )
+scale = Vector2( 0.93, 0.93 )
+texture = ExtResource( 8 )
+offset = Vector2( 2636.89, -451.485 )
+
+[node name="ButtonEnviarInv" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 2048.0
+margin_top = 44.0
+margin_right = 2381.0
+margin_bottom = 149.0
+
+[node name="SimonNpcCirculo" type="Sprite" parent="."]
+position = Vector2( 1949.49, 135.509 )
+scale = Vector2( 0.361, 0.361 )
+texture = ExtResource( 7 )
+
+[node name="ButtonPerfilInv" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1872.0
+margin_top = 39.0
+margin_right = 1997.0
+margin_bottom = 165.0
+
+[node name="BlocoTextoAzulFundo" type="Sprite" parent="."]
+position = Vector2( 737.151, 725 )
+scale = Vector2( 0.488, 0.523 )
+texture = ExtResource( 5 )
+
+[node name="ButtonVermelho" type="Sprite" parent="."]
+position = Vector2( 159, 186 )
+scale = Vector2( 0.74, 0.74 )
+texture = ExtResource( 1 )
+offset = Vector2( 701.349, 176.75 )
+
+[node name="LabelTitulo" type="Label" parent="ButtonVermelho"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 143.0
+margin_top = 53.0
+margin_right = 519.0
+margin_bottom = 138.0
+rect_scale = Vector2( 3, 3 )
+text = "INTRODUÇÃO"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="LabelTexto" type="Label" parent="ButtonVermelho"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 155.0
+margin_top = 62.0
+margin_right = 690.0
+margin_bottom = 181.0
+rect_scale = Vector2( 2, 2 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ButtonInvisivel1" type="Button" parent="ButtonVermelho"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 122.0
+margin_top = 53.0
+margin_right = 1268.0
+margin_bottom = 311.0
+
+[node name="ButtonAzul" type="Sprite" parent="."]
+position = Vector2( 160.411, 196 )
+scale = Vector2( 0.74, 0.74 )
+texture = ExtResource( 3 )
+offset = Vector2( 704.298, 459.619 )
+
+[node name="LabelTitulo" type="Label" parent="ButtonAzul"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 135.182
+margin_top = 340.659
+margin_right = 511.182
+margin_bottom = 425.659
+rect_scale = Vector2( 3, 3 )
+text = "PONTOS POSITIVOS"
+align = 1
+valign = 1
+
+[node name="LabelTexto" type="Label" parent="ButtonAzul"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 165.0
+margin_top = 345.0
+margin_right = 698.0
+margin_bottom = 463.0
+rect_scale = Vector2( 2, 2 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ButtonInvisivel2" type="Button" parent="ButtonAzul"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 124.367
+margin_top = 335.251
+margin_right = 1270.37
+margin_bottom = 593.251
+
+[node name="ButtonVermelho2" type="Sprite" parent="."]
+position = Vector2( 162.411, 625.5 )
+scale = Vector2( 0.74, 0.74 )
+texture = ExtResource( 1 )
+offset = Vector2( 701.349, 176.75 )
+
+[node name="LabelTitulo" type="Label" parent="ButtonVermelho2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 135.0
+margin_top = 47.0
+margin_right = 510.0
+margin_bottom = 137.0
+rect_scale = Vector2( 3, 3 )
+text = "PONTOS DE MELHORIA"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="LabelTexto" type="Label" parent="ButtonVermelho2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 164.0
+margin_top = 68.0
+margin_right = 695.0
+margin_bottom = 183.0
+rect_scale = Vector2( 2, 2 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ButtonInvisivel3" type="Button" parent="ButtonVermelho2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 120.312
+margin_top = 51.369
+margin_right = 1266.31
+margin_bottom = 309.369
+clip_text = true
+
+[node name="ButtonAzul2" type="Sprite" parent="."]
+position = Vector2( 160.411, 637.5 )
+scale = Vector2( 0.74, 0.74 )
+texture = ExtResource( 3 )
+offset = Vector2( 704.298, 459.619 )
+
+[node name="LabelTexto" type="Label" parent="ButtonAzul2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 166.0
+margin_top = 348.0
+margin_right = 700.0
+margin_bottom = 462.0
+rect_scale = Vector2( 2, 2 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="LabelTitulo" type="Label" parent="ButtonAzul2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 135.182
+margin_top = 340.659
+margin_right = 511.182
+margin_bottom = 425.659
+rect_scale = Vector2( 3, 3 )
+text = "CONCLUSÃO"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ButtonInvisivel4" type="Button" parent="ButtonAzul2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 124.367
+margin_top = 339.307
+margin_right = 1270.37
+margin_bottom = 597.307
+clip_text = true
+
+[node name="RespostaV1_1" type="Sprite" parent="."]
+position = Vector2( 1923.01, 543 )
+scale = Vector2( 0.965, 1 )
+texture = ExtResource( 1 )
+offset = Vector2( -93, -221 )
+
+[node name="Label" type="Label" parent="RespostaV1_1"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -631.0
+margin_top = -319.0
+margin_right = -99.0
+margin_bottom = -71.0
+rect_scale = Vector2( 2, 2 )
+text = "Caro Simon,
+
+Seja bem-vindo à empresa. Gostaria de agradecê-lo pela participação em nosso processo seletivo para a vaga de estagiário. Nesse email, vou tratar de algumas observações sobre seu desempenho no processo seletivo.
+"
+autowrap = true
+
+[node name="ButtonInvisivelV1_1" type="Button" parent="RespostaV1_1"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -674.0
+margin_top = -340.0
+margin_right = 469.0
+margin_bottom = -87.0
+
+[node name="RespostaV1_2" type="Sprite" parent="."]
+position = Vector2( 1833.75, 644 )
+scale = Vector2( 0.964, 1 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="RespostaV1_2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -537.947
+margin_top = -99.0
+margin_right = -5.94702
+margin_bottom = 149.0
+rect_scale = Vector2( 2, 2 )
+text = "Beleza, Simon?
+
+Parabéns por ser aprovado no processo seletivo. Vai ser massa ter você na equipe com a gente, trabalhando como nunca! Sinto que a gente vai se ajudar pacas e vamos nos desenvolver naquilo que a gente mais quer melhorar.
+"
+autowrap = true
+
+[node name="ButtonInvisivelV1_2" type="Button" parent="RespostaV1_2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.316
+margin_top = -119.0
+margin_right = 566.684
+margin_bottom = 134.0
+
+[node name="RespostaV1_3" type="Sprite" parent="."]
+position = Vector2( 1281, 900 )
+scale = Vector2( 0.967, 1 )
+texture = ExtResource( 1 )
+offset = Vector2( 572.296, 68 )
+
+[node name="Label" type="Label" parent="RespostaV1_3"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 33.102
+margin_top = -44.0
+margin_right = 565.102
+margin_bottom = 204.0
+rect_scale = Vector2( 2, 2 )
+text = "Olá, Simon!
+
+Estou muito feliz por ter você trabalhando conosco. Durante esse email, vou escrever sobre alguns insights que percebemos ao longo do processo seletivo e que seriam ótimos para você se desenvolver. Estou escrevendo esse email para te ajudar enquanto você trabalha aqui. Segue abaixo nesse email algumas anotações sobre seu desempenho na entrevista que podem te ajudar.
+"
+autowrap = true
+
+[node name="ButtonInvisivelV1_3" type="Button" parent="RespostaV1_3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -9.31
+margin_top = -57.0
+margin_right = 1133.69
+margin_bottom = 196.0
+
+[node name="RespostaA1_1" type="Sprite" parent="."]
+position = Vector2( 1833.75, 322 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA1_1"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -84.0
+margin_right = -4.01898
+margin_bottom = 164.0
+rect_scale = Vector2( 2, 2 )
+text = "Você chegou até o final do processo seletivo, afinal essa vaga tinha que ser preenchida. Agora que você chegou até aqui terá uma quantidade desafiadora de trabalho para fazer, então se precisar de ajuda, pode me contactar."
+autowrap = true
+
+[node name="ButtonInvisivelA1_1" type="Button" parent="RespostaA1_1"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -572.289
+margin_top = -118.0
+margin_right = 570.711
+margin_bottom = 135.0
+
+[node name="RespostaA1_2" type="Sprite" parent="."]
+position = Vector2( 1833.75, 644 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA1_2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -90.0
+margin_right = -4.01898
+margin_bottom = 158.0
+rect_scale = Vector2( 2, 2 )
+text = "Durante a entrevista, pude observar que você possui muitas qualidades positivas, como simpatia, prestatividade e dedicação ao trabalho. Além disso, demonstrou interesse em aprender e se desenvolver profissionalmente, o que é muito valorizado em nossa empresa.
+"
+autowrap = true
+
+[node name="ButtonInvisivelA1_2" type="Button" parent="RespostaA1_2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 131.0
+
+[node name="RespostaA1_3" type="Sprite" parent="."]
+position = Vector2( 1833.75, 968 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA1_3"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -106.0
+margin_right = -4.01898
+margin_bottom = 142.0
+rect_scale = Vector2( 2, 2 )
+text = "Você foi muito bem no processo seletivo e isso preciza ser celebrado! É possível ver sua dedicação com as popostas da empresa e sua ambição em estar sempre se desenvolvendo. Aqui na empresa nós estamos sempre ajudando uns aos outros. Dessa forma, precisando de dicas, estarei aqui para te auxiliar.
+"
+autowrap = true
+
+[node name="ButtonInvisivelA1_3" type="Button" parent="RespostaA1_3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 131.0
+
+[node name="RespostaV2_1" type="Sprite" parent="."]
+position = Vector2( 955, 833 )
+scale = Vector2( 0.965, 1 )
+texture = ExtResource( 1 )
+offset = Vector2( 909.999, -511 )
+
+[node name="Label" type="Label" parent="RespostaV2_1"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 371.976
+margin_top = -597.0
+margin_right = 903.976
+margin_bottom = -349.0
+rect_scale = Vector2( 2, 2 )
+text = "Notei que em alguns momentos você pode ter sido um pouco hesitante em expressar suas ideias e opiniões. Acredito que, com um pouco mais de confiança em si mesmo, você pode desenvolver ainda mais sua habilidade de comunicação."
+autowrap = true
+
+[node name="ButtonInvisivelV2_1" type="Button" parent="RespostaV2_1"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 332.603
+margin_top = -632.0
+margin_right = 1475.6
+margin_bottom = -379.0
+
+[node name="RespostaV2_2" type="Sprite" parent="."]
+position = Vector2( 1833.75, 644 )
+scale = Vector2( 0.964, 1 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="RespostaV2_2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -106.0
+margin_right = -4.01898
+margin_bottom = 142.0
+rect_scale = Vector2( 2, 2 )
+text = "Agora gostaria de dar um feedback sobre os outros pontos que analisei. Esses pontos de forma alguma são negativos, então meu intuito não é te ofender ou te causar qualquer mal. Pelo contrário, quero te ajudar. Eu acho que se você tivesse sido um pouco mais direto nas suas falas isso poderia ser algo mais confortável. Outra coisa seria buscar ouvir mais opiniões diversas se você acha que seria interessante fazer isso às vezes."
+autowrap = true
+
+[node name="ButtonInvisivelV2_2" type="Button" parent="RespostaV2_2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 130.0
+
+[node name="RespostaV2_3" type="Sprite" parent="."]
+position = Vector2( 1834.25, 968 )
+scale = Vector2( 0.967, 1 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="RespostaV2_3"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -89.0
+margin_right = -4.01898
+margin_bottom = 159.0
+rect_scale = Vector2( 2, 2 )
+text = "Acredito que você se trata de uma pessoa que não lida bem com ideias de outras pessoas. Além disso, você é uma pessoa com dificuldade de se comunicar claramente com outras pessoas."
+autowrap = true
+
+[node name="ButtonInvisivelV2_3" type="Button" parent="RespostaV2_3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 131.0
+
+[node name="RespostaA2_1" type="Sprite" parent="."]
+position = Vector2( 1833.75, 322 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA2_1"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -80.0
+margin_right = -4.01898
+margin_bottom = 168.0
+rect_scale = Vector2( 2, 2 )
+text = "Espero que você possa continuar melhorando aqui na empresa conosco. Você foi uma pessoa atenciosa com nossa equipe e com nossos valores, por isso confio que trabalharemos muito bem juntos!"
+autowrap = true
+
+[node name="ButtonInvisivelA2_1" type="Button" parent="RespostaA2_1"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -121.0
+margin_right = 566.605
+margin_bottom = 132.0
+
+[node name="RespostaA2_2" type="Sprite" parent="."]
+position = Vector2( 1833.75, 644 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA2_2"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.019
+margin_top = -113.0
+margin_right = -4.01898
+margin_bottom = 135.0
+rect_scale = Vector2( 2, 2 )
+text = "Destarte, tenho a intenção de demonstrar incentivos ao senhor de forma que continue a buscar o esmero das suas competências e discernimentos, pois tenho total convicção de que você possui potencial para se tornar um profissional de renome.
+
+Coloco-me à sua disposição para quaisquer esclarecimentos,
+Player"
+autowrap = true
+
+[node name="ButtonInvisivelA2_2" type="Button" parent="RespostaA2_2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 131.0
+
+[node name="RespostaA2_3" type="Sprite" parent="."]
+position = Vector2( 1833.75, 968 )
+scale = Vector2( 0.966, 1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="RespostaA2_3"]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = -536.0
+margin_top = -95.0
+margin_right = -4.0
+margin_bottom = 153.0
+rect_scale = Vector2( 2, 2 )
+text = "Gostaria de incentivá-lo a continuar buscando aprimorar suas habilidades e conhecimentos, pois tenho certeza de que você tem potencial para se tornar um profissional de sucesso.
+
+Atenciosamente,
+Player"
+autowrap = true
+
+[node name="ButtonInvisivelA2_3" type="Button" parent="RespostaA2_3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -576.395
+margin_top = -122.0
+margin_right = 566.605
+margin_bottom = 131.0
+
+[node name="LabelTelaDescanso" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 18.0
+margin_top = 519.0
+margin_right = 637.0
+margin_bottom = 563.0
+rect_scale = Vector2( 4, 4 )
+text = "Parabéns! Você enviou o feedback para o Simon!"
+align = 1
+
+[node name="ButtonProxTelaDescanso" type="Sprite" parent="."]
+physics_interpolation_mode = 1
+position = Vector2( 2134, 1046 )
+scale = Vector2( 1.136, 1.136 )
+texture = ExtResource( 6 )
+
+[node name="ButtonTelaDescansoToFeedback" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1927.0
+margin_top = 991.0
+margin_right = 2333.0
+margin_bottom = 1110.0
+
+[node name="IntroFeedback" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1266.0
+margin_top = 128.0
+margin_right = 1712.0
+margin_bottom = 184.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Escreva um email de feedback para o Simon"
+autowrap = true
+
+[node name="PPFeedback" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1269.0
+margin_top = 344.0
+margin_right = 1714.0
+margin_bottom = 402.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Escreva um email de feedback para o Simon"
+autowrap = true
+
+[node name="PNFeedback" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1266.0
+margin_top = 599.0
+margin_right = 1712.0
+margin_bottom = 657.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Escreva um email de feedback para o Simon"
+autowrap = true
+
+[node name="ConcFeedback" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1266.0
+margin_top = 841.0
+margin_right = 1717.0
+margin_bottom = 899.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Escreva um email de feedback para o Simon"
+autowrap = true
+
+[node name="ScoreFeedback" type="Label" parent="."]
+modulate = Color( 0.305882, 0.219608, 0.160784, 1 )
+margin_left = 1270.0
+margin_top = 1068.0
+margin_right = 1712.0
+margin_bottom = 1119.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Score"
+autowrap = true
+
+[node name="ButtonProxFinal" type="TextureButton" parent="."]
+margin_left = 2023.0
+margin_top = 1022.0
+margin_right = 2435.0
+margin_bottom = 1185.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
+
+[connection signal="pressed" from="ButtonEnviarInv" to="." method="_on_ButtonEnviarInv_pressed"]
+[connection signal="pressed" from="ButtonPerfilInv" to="." method="_on_ButtonPerfilInv_pressed"]
+[connection signal="pressed" from="ButtonVermelho/ButtonInvisivel1" to="." method="_on_ButtonInvisivel1_pressed"]
+[connection signal="pressed" from="ButtonAzul/ButtonInvisivel2" to="." method="_on_ButtonInvisivel2_pressed"]
+[connection signal="pressed" from="ButtonVermelho2/ButtonInvisivel3" to="." method="_on_ButtonInvisivel3_pressed"]
+[connection signal="pressed" from="ButtonAzul2/ButtonInvisivel4" to="." method="_on_ButtonInvisivel4_pressed"]
+[connection signal="pressed" from="RespostaV1_1/ButtonInvisivelV1_1" to="." method="_on_ButtonInvisivelV1_1_pressed"]
+[connection signal="pressed" from="RespostaV1_2/ButtonInvisivelV1_2" to="." method="_on_ButtonInvisivelV1_2_pressed"]
+[connection signal="pressed" from="RespostaV1_3/ButtonInvisivelV1_3" to="." method="_on_ButtonInvisivelV1_3_pressed"]
+[connection signal="pressed" from="RespostaA1_1/ButtonInvisivelA1_1" to="." method="_on_ButtonInvisivelA1_1_pressed"]
+[connection signal="pressed" from="RespostaA1_2/ButtonInvisivelA1_2" to="." method="_on_ButtonInvisivelA1_2_pressed"]
+[connection signal="pressed" from="RespostaA1_3/ButtonInvisivelA1_3" to="." method="_on_ButtonInvisivelA1_3_pressed"]
+[connection signal="pressed" from="RespostaV2_1/ButtonInvisivelV2_1" to="." method="_on_ButtonInvisivelV2_1_pressed"]
+[connection signal="pressed" from="RespostaV2_2/ButtonInvisivelV2_2" to="." method="_on_ButtonInvisivelV2_2_pressed"]
+[connection signal="pressed" from="RespostaV2_3/ButtonInvisivelV2_3" to="." method="_on_ButtonInvisivelV2_3_pressed"]
+[connection signal="pressed" from="RespostaA2_1/ButtonInvisivelA2_1" to="." method="_on_ButtonInvisivelA2_1_pressed"]
+[connection signal="pressed" from="RespostaA2_2/ButtonInvisivelA2_2" to="." method="_on_ButtonInvisivelA2_2_pressed"]
+[connection signal="pressed" from="RespostaA2_3/ButtonInvisivelA2_3" to="." method="_on_ButtonInvisivelA2_3_pressed"]
+[connection signal="pressed" from="ButtonTelaDescansoToFeedback" to="." method="_on_ButtonTelaDescansoToFeedback_pressed"]
+[connection signal="pressed" from="ButtonProxFinal" to="." method="_on_ButtonProxFinal_pressed"]
