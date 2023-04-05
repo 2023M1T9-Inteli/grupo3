@@ -23,7 +23,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="CenárioNn" type="Sprite" parent="."]
-position = Vector2( 1241.84, 456.512 )
+position = Vector2( 1250, 455 )
 scale = Vector2( 1.00401, 1.01111 )
 texture = ExtResource( 7 )
 
