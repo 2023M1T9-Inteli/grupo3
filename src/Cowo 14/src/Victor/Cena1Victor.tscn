@@ -18,7 +18,6 @@
 [ext_resource path="res://assets/Person/victor/victor_npc_definitivo_bravo.png" type="Texture" id=16]
 [ext_resource path="res://assets/UI/Som.png" type="Texture" id=17]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="CenárioVictor" type="Sprite" parent="."]
@@ -42,14 +41,14 @@ script = ExtResource( 8 )
 
 [node name="VictorNpcDefinitivoNeutro" type="Sprite" parent="Control"]
 visible = false
-position = Vector2( 1987, 542 )
-scale = Vector2( 0.982109, 0.982109 )
+position = Vector2( 1987, 540 )
+scale = Vector2( 0.969, 0.969 )
 texture = ExtResource( 15 )
 
 [node name="VictorNpcDefinitivoBravo" type="Sprite" parent="Control"]
 visible = false
 position = Vector2( 1989, 533 )
-scale = Vector2( 0.982109, 0.982109 )
+scale = Vector2( 0.969, 0.969 )
 texture = ExtResource( 16 )
 
 [node name="CaixinhaTexto" type="Sprite" parent="Control"]
