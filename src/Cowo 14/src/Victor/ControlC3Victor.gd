@@ -173,7 +173,7 @@ func load_dialogo(resIndex = 0):
 		#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 		$TextBox.visible = true
 		$TextBox/RichTextLabel.bbcode_text = "Infelizmente, precisamos ter uma conversa sobre o seu desempenho. Embora eu saiba que você tem potencial, suas recentes atitudes têm sido bastante decepcionantes. Parece que você não está ciente dos valores da CoWo, que incluem o respeito e a comunicação assertiva, algo que você claramente não está demonstrando. Assim, tire um tempo para refletir, espero que você possa se esforçar mais amanhã e mostrar que é capaz de agir de acordo com os valores da CoWo."
-		$TextBox/Label.text = text[dialogo_index]["Name"]
+		$TextBox/Label.text = text[0]["Name"]
 		
 		#Torna a porcentagem do texto que está sendo exibido como 0
 		$TextBox/RichTextLabel.percent_visible = 0
@@ -239,7 +239,7 @@ func _on_Btn_A_pressed() -> void:
 	$CaixaResposta/Btn_C.hide()
 	if Global.VictorHumor + Global.LeticiaHumor <= 0: perdeu = true
 	#Roda o próximo dialogo
-	if text[dialogo_index].size() > 1:
+	if text[dialogo_index]["Text"].size() > 1:
 		load_dialogo(a)
 	else:
 		load_dialogo()
@@ -264,7 +264,7 @@ func _on_Btn_B_pressed() -> void:
 	$CaixaResposta/Btn_B.hide()
 	$CaixaResposta/Btn_C.hide()
 	if Global.VictorHumor + Global.LeticiaHumor <= 0: perdeu = true
-	if text[dialogo_index].size() > 1:
+	if text[dialogo_index]["Text"].size() > 1:
 		load_dialogo(b)
 	else:
 		load_dialogo()
@@ -289,7 +289,7 @@ func _on_Btn_C_pressed() -> void:
 	$CaixaResposta/Btn_B.hide()
 	$CaixaResposta/Btn_C.hide()
 	if Global.VictorHumor + Global.LeticiaHumor <= 0: perdeu = true
-	if text[dialogo_index].size() > 1:
+	if text[dialogo_index]["Text"].size() > 1:
 		load_dialogo(c)
 	else:
 		load_dialogo()

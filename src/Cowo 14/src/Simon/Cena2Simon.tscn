@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/UI/barrahumor_720.png" type="Texture" id=1]
 [ext_resource path="res://assets/UI/Caixa_Resposta.png" type="Texture" id=2]
@@ -16,7 +16,6 @@
 [ext_resource path="res://assets/UI/emoji_bravo.png" type="Texture" id=14]
 [ext_resource path="res://assets/Person/Simon/simon_npc_bravo.png" type="Texture" id=15]
 [ext_resource path="res://src/HUD/UiLivro.tscn" type="PackedScene" id=16]
-[ext_resource path="res://assets/UI/Som.png" type="Texture" id=17]
 [ext_resource path="res://assets/UI/frase_livro_treinamentos.png" type="Texture" id=18]
 [ext_resource path="res://assets/UI/seta_branca.png" type="Texture" id=20]
 [ext_resource path="res://assets/UI/papel_circulo.png" type="Texture" id=22]
@@ -157,15 +156,6 @@ min_value = -50.0
 max_value = -4.0
 value = -4.0
 
-[node name="Som" type="TextureButton" parent="Control"]
-margin_left = 2297.0
-margin_top = 16.0
-margin_right = 2379.0
-margin_bottom = 98.0
-texture_normal = ExtResource( 17 )
-texture_pressed = ExtResource( 17 )
-expand = true
-
 [node name="Tutorial" type="ColorRect" parent="Control"]
 visible = false
 margin_right = 2502.0
@@ -300,7 +290,6 @@ deselect_on_focus_loss_enabled = false
 
 [connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
 [connection signal="pressed" from="Control/CaixinhaTexto/Cutscene" to="Control" method="_on_Cutscene_pressed"]
-[connection signal="pressed" from="Control/Som" to="Control" method="_on_Som_pressed"]
 [connection signal="pressed" from="Control/CaixaResposta/Btn_A" to="Control" method="_on_Btn_A_pressed"]
 [connection signal="pressed" from="Control/CaixaResposta/Btn_B" to="Control" method="_on_Btn_B_pressed"]
 [connection signal="pressed" from="Control/CaixaResposta/Btn_C" to="Control" method="_on_Btn_C_pressed"]

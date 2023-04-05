@@ -173,7 +173,7 @@ func load_dialogo():
 		#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 		$TextBox.visible = true
 		$TextBox/RichTextLabel.bbcode_text = "Se fodeu"
-		$TextBox/Label.text = text[dialogo_index]["Name"]
+		$TextBox/Label.text = text[0]["Name"]
 		
 		#Torna a porcentagem do texto que está sendo exibido como 0
 		$TextBox/RichTextLabel.percent_visible = 0
@@ -293,5 +293,5 @@ func _on_Email_pressed() -> void:
 	get_tree().change_scene_to(load("res://src/Minigames/Email/email1.tscn"))
 
 
-func _on_TextureButton_pressed() -> void:
+func _on_Som_pressed() -> void:
 	$HSlider.visible = !$HSlider.visible

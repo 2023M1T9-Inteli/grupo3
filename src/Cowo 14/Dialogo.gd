@@ -379,59 +379,6 @@ var dialogo_9 = [ #Armazena diálogo 9
 
 ]
 
-var cutscene_1 = [
-	{
-		"Name": "Sr. Facundes",
-		"Text": "Boa tarde Victor, tenho uma tarefa para você. Por favor, monte a apresentação da reunião de hoje, é urgente. ",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Victor",
-		"Text": "Boa tarde Facundes, vou fazer essa tarefa. Até a reunião estará tudo pronto.",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Sr. Facundes",
-		"Text": "Obrigado Victor",
-		"Choices": [""],
-		"Responses": [""]
-	},
-]
-
-var cutscene_2 = [
-	{
-		"Name": "Victor",
-		"Text": "Boa tarde Simon, tenho essa apresentação urgente para você desenvolver, preciso para hoje.",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Simon",
-		"Text": "Boa Tarde, eu estava agora fazendo outra tarefa, você acha que devo priorizar essa?",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Victor",
-		"Text": "Essa apresentação é muito importante, então preciso que você pare o que está fazendo para concluir essa tarefa.",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Simon",
-		"Text": "Entendido Victor, vou concluir ela o mais rápido possível.",
-		"Choices": [""],
-		"Responses": [""]
-	},
-	{
-		"Name": "Victor",
-		"Text": "Obrigado!",
-		"Choices": [""],
-		"Responses": [""]
-	},
-]
 
 var dialogo_10 = [
 	{
@@ -557,5 +504,59 @@ var dialogo_13 = [
 		"Text": "Ah, quase me esqueci, elaborei um relatório com seu desempenho nos últimos dias, é muito importante que você o leia e entenda como melhorar para o seu próximo cargo. Até amanhã!",
 		
 		"Response": ["",],
+	},
+]
+var cutscene_1 = [
+
+	{
+		"Name": "Sr. Facundes",
+		"Text": "Boa tarde Victor, tenho uma tarefa para você. Por favor, monte a apresentação da reunião de hoje, é urgente. ",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Victor",
+		"Text": "Boa tarde Facundes, vou fazer essa tarefa. Até a reunião estará tudo pronto.",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Sr. Facundes",
+		"Text": "Obrigado Victor",
+		"Choices": [""],
+		"Responses": [""]
+	},
+]
+
+var cutscene_2 = [
+	{
+		"Name": "Victor",
+		"Text": "Boa tarde Simon, tenho essa apresentação urgente para você desenvolver, preciso para hoje.",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Simon",
+		"Text": "Boa Tarde, eu estava agora fazendo outra tarefa, você acha que devo priorizar essa?",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Victor",
+		"Text": "Essa apresentação é muito importante, então preciso que você pare o que está fazendo para concluir essa tarefa.",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Simon",
+		"Text": "Entendido Victor, vou concluir ela o mais rápido possível.",
+		"Choices": [""],
+		"Responses": [""]
+	},
+	{
+		"Name": "Victor",
+		"Text": "Obrigado!",
+		"Choices": [""],
+		"Responses": [""]
 	},
 ]

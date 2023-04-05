@@ -174,7 +174,7 @@ func load_dialogo():
 		#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 		$TextBox.visible = true
 		$TextBox/RichTextLabel.bbcode_text = "Se fodeu"
-		$TextBox/Label.text = text[dialogo_index]["Name"]
+		$TextBox/Label.text = text[0]["Name"]
 		
 		#Torna a porcentagem do texto que está sendo exibido como 0
 		$TextBox/RichTextLabel.percent_visible = 0

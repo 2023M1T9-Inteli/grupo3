@@ -198,7 +198,7 @@ func load_dialogo(res, resIndex):
 		#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 		$TextBox.visible = true
 		$TextBox/RichTextLabel.bbcode_text = "Infelizmente, precisamos ter uma conversa sobre o seu desempenho. Embora eu saiba que você tem potencial, suas recentes atitudes têm sido bastante decepcionantes. Parece que você não está ciente dos valores da CoWo, que incluem o respeito e a comunicação assertiva, algo que você claramente não está demonstrando. Assim, tire um tempo para refletir, espero que você possa se esforçar mais amanhã e mostrar que é capaz de agir de acordo com os valores da CoWo."
-		$TextBox/Label.text = text[dialogo_index]["Name"]
+		$TextBox/Label.text = text[0]["Name"]
 		
 		#Torna a porcentagem do texto que está sendo exibido como 0
 		$TextBox/RichTextLabel.percent_visible = 0

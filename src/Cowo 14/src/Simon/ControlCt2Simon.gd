@@ -51,7 +51,7 @@ func load_dialogo():
 			$TextBox.visible = false
 			$TextBox2.visible = true
 			$TextBox2/RichTextLabel.bbcode_text = text[dialogo_index]["Text"]
-			$TextBox2/Label.text = text[dialogo_index]["Name"]
+			$TextBox2/Label.text = text[0]["Name"]
 			
 			$TextBox2/RichTextLabel.percent_visible = 0
 			$TextBox2/Tween.interpolate_property(
