@@ -243,7 +243,7 @@ func _on_Btn_A_pressed() -> void:
 	if a == 0:
 		Global.Ativa +=1
 		if Global.LeticiaHumor <= 8:
-			Global.LeticiaHumorr += 2
+			Global.LeticiaHumor += 2
 	elif a == 1:
 		Global.Passiva +=1
 		Global.LeticiaHumor -= 0
