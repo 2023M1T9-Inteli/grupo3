@@ -42,14 +42,14 @@ script = ExtResource( 8 )
 
 [node name="VictorNpcDefinitivoNeutro" type="Sprite" parent="Control"]
 visible = false
-position = Vector2( 1987, 542 )
-scale = Vector2( 0.982109, 0.982109 )
+position = Vector2( 1987, 540 )
+scale = Vector2( 0.969, 0.969 )
 texture = ExtResource( 15 )
 
 [node name="VictorNpcDefinitivoBravo" type="Sprite" parent="Control"]
 visible = false
 position = Vector2( 1989, 533 )
-scale = Vector2( 0.982109, 0.982109 )
+scale = Vector2( 0.969, 0.969 )
 texture = ExtResource( 16 )
 
 [node name="CaixinhaTexto" type="Sprite" parent="Control"]
