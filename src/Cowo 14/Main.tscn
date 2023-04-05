@@ -9,5 +9,5 @@ script = ExtResource( 2 )
 
 [node name="InícioTelaInicio" type="Sprite" parent="."]
 position = Vector2( 1249.32, 592.75 )
-scale = Vector2( 1.30242, 1.30241 )
+scale = Vector2( 1.302, 1.302 )
 texture = ExtResource( 1 )

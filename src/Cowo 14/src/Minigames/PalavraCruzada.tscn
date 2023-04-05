@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://ARIAL.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/Person/Cenário/relatorio.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/HUD/Livro.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/UI/livro.png" type="Texture" id=6]
 [ext_resource path="res://assets/UI/relatoriodois.png" type="Texture" id=7]
+[ext_resource path="res://assets/minigame email/button_enviar.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -407,12 +408,18 @@ text = "3"
 
 [node name="Verificar" type="Button" parent="."]
 visible = false
-margin_left = 1849.0
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1824.0
 margin_top = 904.0
-margin_right = 1973.0
+margin_right = 2005.0
 margin_bottom = 967.0
 rect_scale = Vector2( 2, 2 )
 text = "Entregar"
+
+[node name="ButtonEnviar" type="Sprite" parent="Verificar"]
+position = Vector2( 91, 29 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
 
 [node name="HSlider" type="HSlider" parent="."]
 visible = false

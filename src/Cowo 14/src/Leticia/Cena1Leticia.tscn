@@ -23,6 +23,9 @@
 [ext_resource path="res://assets/UI/seta_branca.png" type="Texture" id=21]
 
 [node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
 
 [node name="CenárioLetícia(1)" type="Sprite" parent="."]
 position = Vector2( 1251.16, 451.5 )
