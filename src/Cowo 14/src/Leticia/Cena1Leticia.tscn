@@ -215,11 +215,11 @@ text = "Hello"
 
 [node name="Tutorial" type="ColorRect" parent="Control"]
 margin_right = 2500.0
-margin_bottom = 902.0
+margin_bottom = 1177.0
 color = Color( 0.0313726, 0.0313726, 0.0313726, 0.85098 )
 
 [node name="LinhaFrase3" type="Sprite" parent="Control/Tutorial"]
-position = Vector2( 1312, 826 )
+position = Vector2( 1269, 1026 )
 scale = Vector2( 0.511905, 0.511905 )
 texture = ExtResource( 20 )
 
