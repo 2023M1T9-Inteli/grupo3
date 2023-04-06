@@ -1,0 +1,65 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://src/Minigames/Popup.gd" type="Script" id=1]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_2-removebg-preview.png" type="Texture" id=2]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_7-removebg-preview (1).png" type="Texture" id=3]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_5-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_3-removebg-preview.png" type="Texture" id=5]
+[ext_resource path="res://assets/minigame email/bloco_texto.png" type="Texture" id=6]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_4-removebg-preview.png" type="Texture" id=7]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_6-removebg-preview.png" type="Texture" id=8]
+[ext_resource path="res://assets/minigame termo/large-gifsalvando_1-removebg-preview.png" type="Texture" id=9]
+[ext_resource path="res://assets/minigame termo/termo.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 3.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Termo" type="Sprite" parent="."]
+position = Vector2( 1250, 585 )
+scale = Vector2( 1.25, 0.975 )
+texture = ExtResource( 10 )
+
+[node name="BlocoTexto" type="Sprite" parent="."]
+position = Vector2( 1178.87, 592.255 )
+scale = Vector2( 0.257, 0.257 )
+texture = ExtResource( 6 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1142.87, 576.255 )
+scale = Vector2( 0.368, 0.368 )
+frames = SubResource( 1 )
+frame = 6
+playing = true
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 902.0
+margin_top = 412.0
+margin_right = 1095.0
+margin_bottom = 436.0
+rect_scale = Vector2( 2.5, 2.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Dados enviados com sucesso!"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1012.0
+margin_top = 735.0
+margin_right = 1128.0
+margin_bottom = 749.0
+rect_scale = Vector2( 2, 2 )
+text = "Pressione espaço"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

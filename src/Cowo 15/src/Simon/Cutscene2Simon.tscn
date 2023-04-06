@@ -1,0 +1,148 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/UI/Som.png" type="Texture" id=1]
+[ext_resource path="res://assets/UI/Caixa_Resposta.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/caixinha_texto.png" type="Texture" id=3]
+[ext_resource path="res://assets/Person/Simon/simon_npc_circulo.png" type="Texture" id=4]
+[ext_resource path="res://assets/Person/Simon/simon_npc_definitivo.png" type="Texture" id=5]
+[ext_resource path="res://assets/Person/Cenário/cenário_nn.png" type="Texture" id=6]
+[ext_resource path="res://assets/Person/victor/victor_npc_definitivo.png" type="Texture" id=7]
+[ext_resource path="res://Dialogo.gd" type="Script" id=8]
+[ext_resource path="res://assets/UI/caixa_texto_g_720.png" type="Texture" id=9]
+[ext_resource path="res://src/Simon/ControlCt2Simon.gd" type="Script" id=10]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CenárioNn" type="Sprite" parent="."]
+position = Vector2( 1249, 455 )
+scale = Vector2( 1.01057, 1.01057 )
+texture = ExtResource( 6 )
+
+[node name="SimonNpcDefinitivo" type="Sprite" parent="."]
+position = Vector2( 2081, 507 )
+texture = ExtResource( 5 )
+
+[node name="VictorNpcDefinitivo" type="Sprite" parent="."]
+position = Vector2( 441, 565 )
+texture = ExtResource( 7 )
+
+[node name="Dialogo" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 2501.0
+margin_bottom = 1179.0
+rect_pivot_offset = Vector2( 310, 360 )
+script = ExtResource( 10 )
+
+[node name="CaixinhaTexto" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 131, 519 )
+rotation = -1.5708
+scale = Vector2( 0.535788, 0.535788 )
+texture = ExtResource( 3 )
+
+[node name="Feedback" type="Button" parent="Control/CaixinhaTexto"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -208.0
+margin_top = -116.0
+margin_right = -14.0
+margin_bottom = 25.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="SimonNpcCirculo" type="Sprite" parent="Control/CaixinhaTexto"]
+position = Vector2( -52.2595, 46.66 )
+rotation = 1.5708
+scale = Vector2( 0.486257, 0.486257 )
+texture = ExtResource( 4 )
+
+[node name="CaixaResposta" type="Sprite" parent="Control"]
+position = Vector2( 1250, 1036 )
+scale = Vector2( 1.30221, 1.22706 )
+texture = ExtResource( 2 )
+
+[node name="TextBox" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 1433, 363 )
+rotation = 3.14159
+texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="Control/TextBox"]
+margin_left = 300.0
+margin_top = 115.001
+margin_right = 343.0
+margin_bottom = 133.001
+rect_rotation = -180.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.34902, 0.266667, 0.266667, 1 )
+text = "Name"
+align = 1
+valign = 1
+
+[node name="Tween" type="Tween" parent="Control/TextBox"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TextBox"]
+margin_left = 299.0
+margin_top = 56.0013
+margin_right = 579.0
+margin_bottom = 136.001
+rect_rotation = 180.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+
+[node name="HSlider" type="HSlider" parent="Control"]
+visible = false
+margin_left = 2235.0
+margin_top = 120.0
+margin_right = 2440.0
+margin_bottom = 136.0
+size_flags_horizontal = 15
+size_flags_stretch_ratio = 0.0
+min_value = -50.0
+max_value = -4.0
+value = -4.0
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+margin_left = 2297.0
+margin_top = 16.0
+margin_right = 2379.0
+margin_bottom = 98.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 1 )
+expand = true
+
+[node name="TextBox2" type="Sprite" parent="Control"]
+position = Vector2( 894, 337 )
+rotation = 3.14159
+scale = Vector2( -1, 1 )
+texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="Control/TextBox2"]
+margin_left = -262.0
+margin_top = 114.998
+margin_right = -219.0
+margin_bottom = 132.998
+rect_rotation = -180.0
+rect_scale = Vector2( -2, 2 )
+custom_colors/font_color = Color( 0.34902, 0.266667, 0.266667, 1 )
+text = "Name"
+align = 1
+valign = 1
+
+[node name="Tween" type="Tween" parent="Control/TextBox2"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TextBox2"]
+margin_left = -263.0
+margin_top = 55.9978
+margin_right = 17.0001
+margin_bottom = 135.998
+rect_rotation = 180.0
+rect_scale = Vector2( -2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+
+[connection signal="pressed" from="Control/CaixinhaTexto/Feedback" to="Control" method="_on_Feedback_pressed"]
+[connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="Control/TextureButton" to="Control" method="_on_TextureButton_pressed"]
+[connection signal="tween_completed" from="Control/TextBox2/Tween" to="Control" method="_on_Tween_tween_completed"]
