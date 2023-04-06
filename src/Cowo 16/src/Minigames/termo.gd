@@ -15,6 +15,7 @@ func _ready() -> void:
 	aIndex.randomize()
 	aIndex = aIndex.randi() % 4
 	palavra = palavras[aIndex]
+	$HSlider.value = Music.Volume	
 
 # Um array de nós LineEdit que compõem uma grade
 onready var quadrados = [
@@ -28,6 +29,8 @@ onready var quadrados = [
 # O método _process é chamado a cada quadro
 # Ele percorre a matriz de LineEdits e faz algumas coisas com base em seu estado
 func _process(delta):
+	Music.Volume = $HSlider.value
+	
 	for i in range(6):
 		for j in range(5):
 			 # Se o LineEdit atual tiver algum texto e não estiver no último coluna
@@ -69,3 +72,7 @@ func _on_Timer_timeout():
 		get_tree().change_scene("res://src/Minigames/termo.tscn")
 	else: 
 		get_tree().change_scene("res://src/Minigames/Popup.tscn")
+
+
+func _on_TextureButton_pressed() -> void:
+	$HSlider.visible = !$HSlider.visible

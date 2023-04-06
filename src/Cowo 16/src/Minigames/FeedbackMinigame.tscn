@@ -46,11 +46,12 @@ func _ready() -> void:
 func _on_TextureButton_pressed() -> void:
 	if Global.fase == 1:
 		get_tree().change_scene(\"res://src/Facundes/Cena1Facundes.tscn\")
+	else:
+		get_tree().change_scene(\"res://Final.tscn\")
 
 
 func _on_Tween_tween_completed(object: Object, key: NodePath) -> void:
-	if Global.fase == 1:
-		$TextureButton.show()
+	$TextureButton.show()
 "
 
 [node name="Node2D" type="Node2D"]

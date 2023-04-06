@@ -294,7 +294,7 @@ func _on_Btn_C_pressed() -> void:
 #Função executada ao pressionar o botão Termo
 func _on_Feedback_pressed() -> void:
 	#Leva o jogador para a cena do Termo
-	get_tree().change_scene_to(load("res://src/Minigames/FeedbackMingame.tscn"))
+	get_tree().change_scene("res://src/Minigames/FeedbackMinigame.tscn")
 
 
 func _on_TextureButton_pressed() -> void:

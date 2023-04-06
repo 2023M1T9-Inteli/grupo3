@@ -34,6 +34,10 @@ var perdeu = false
 #Função executada ao iniciar o jogo
 func _ready():
 	Global.fase = 2
+	Global.Passiva = 0
+	Global.PassivaAgressiva = 0
+	Global.Ativa = 0
+	
 	$HSlider.value = Music.Volume
 	#Ajusta as barras de humor
 	$HumorMedioColor.color = Color(convertColorR(Global.Media), convertColorG(Global.Media), 0)
