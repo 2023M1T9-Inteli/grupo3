@@ -1,9 +1,9 @@
 extends Control
 #Variavel que busca o dicionário de falas da cena um criado no arquivo Dialogo
-onready var text = get_parent().get_node("Dialogo").cutscene_1
+onready var text = get_parent().get_node("Dialogo").cutscene1
 
 #Armazena o numero que referencia o item do dicionario que está sendo exibido
-var dialogo_index = 0;
+var dialogIndex = 0;
 #Booleana que armazena a condição que mostra se a animação do texto já foi concluida
 var finished
 #Booleana que armazena a condição que mostra se a animação do texto está ativa
@@ -11,12 +11,12 @@ var active
 
 #Função executada ao iniciar o jogo
 func _ready():
-	$HSlider.value = Music.Volume
+	$HSlider.value = Music.volume
 	load_dialogo()
 	
 #Fnção que é executada em loop
 func _physics_process(delta):
-	Music.Volume = $HSlider.value
+	Music.volume = $HSlider.value
 
 		
 	#Caso a animação de texto esteja em andamento e não haja opcões, e a tecla espaço seja pressionada 
@@ -31,15 +31,15 @@ func _physics_process(delta):
 #Função que roda o diálogo e sua aniação
 func load_dialogo():
 	
-	if dialogo_index < text.size():
+	if dialogIndex < text.size():
 		active = true
 		finished = false
 		
-		if text[dialogo_index]["Name"] == "Sr. Facundes":
+		if text[dialogIndex]["Name"] == "Sr. Facundes":
 			$TextBox.visible = true
 			$TextBox2.visible = false
-			$TextBox/RichTextLabel.bbcode_text = text[dialogo_index]["Text"]
-			$TextBox/Label.text = text[dialogo_index]["Name"]
+			$TextBox/RichTextLabel.bbcode_text = text[dialogIndex]["Text"]
+			$TextBox/Label.text = text[dialogIndex]["Name"]
 			
 			$TextBox/RichTextLabel.percent_visible = 0
 			$TextBox/Tween.interpolate_property(
@@ -50,8 +50,8 @@ func load_dialogo():
 		else:
 			$TextBox.visible = false
 			$TextBox2.visible = true
-			$TextBox2/RichTextLabel.bbcode_text = text[dialogo_index]["Text"]
-			$TextBox2/Label.text = text[dialogo_index]["Name"]
+			$TextBox2/RichTextLabel.bbcode_text = text[dialogIndex]["Text"]
+			$TextBox2/Label.text = text[dialogIndex]["Name"]
 			
 			$TextBox2/RichTextLabel.percent_visible = 0
 			$TextBox2/Tween.interpolate_property(
@@ -68,7 +68,7 @@ func load_dialogo():
 		#Afirma que a animação finalizou
 		finished = true
 		active = false
-	dialogo_index += 1
+	dialogIndex += 1
 
 
 

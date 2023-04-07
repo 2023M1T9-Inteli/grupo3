@@ -1,9 +1,9 @@
 extends Control
 #Variavel que busca o dicionário de falas da cena um criado no arquivo Dialogo
-onready var text = get_parent().get_node("Dialogo").dialogo_1
+onready var text = get_parent().get_node("Dialogo").dialog1
 
 #Armazena o numero que referencia o item do dicionario que está sendo exibido
-var dialogo_index = 0;
+var dialogIndex = 0;
 #Booleana que armazena a condição que mostra se a animação do texto já foi concluida
 var finished
 #Booleana que armazena a condição que mostra se a animação do texto está ativa
@@ -23,7 +23,7 @@ onready var MedColorAnim = $HumorMedioColor/MediaColor_anim
 #Variável que armazena o Tween responsável pela animação da tranzição de tamanho da barra de humor médio
 onready var MedSizeAnim = $HumorMedioColor/MediaSize_anim
 #variavel que define o nivel de humor médio do escritório
-var Media: float = 10
+var meanMood: float = 10
 #Booleana que armazena a condição que mostra se algum botão foi clicado
 var btnClicked = false
 #Booleana que armazena a condição que mostra se há alguma opção de resposta
@@ -31,52 +31,52 @@ var haveChoices = false
 
 var tutorial = true
 
-var perdeu = false
+var loose = false
 
 #Função executada ao iniciar o jogo
 func _ready():
-	$HSlider.value = Music.Volume
+	$HSlider.value = Music.volume
 	#Ajusta as barras de humor
-	$HumorMedioColor.color = Color(convertColorR(Global.Media), convertColorG(Global.Media), 0)
-	$HumorMedioColor.rect_size.y = convertSize(Global.Media)
+	$HumorMedioColor.color = Color(convertColorR(Global.meanMood), convertColorG(Global.meanMood), 0)
+	$HumorMedioColor.rect_size.y = convertSize(Global.meanMood)
 	
-	$HumorColor.color = Color(convertColorR(Global.LeticiaHumor), convertColorG(Global.LeticiaHumor), 0)
-	$HumorColor.rect_size.y = convertSize(Global.LeticiaHumor)
+	$HumorColor.color = Color(convertColorR(Global.leticiaMood), convertColorG(Global.leticiaMood), 0)
+	$HumorColor.rect_size.y = convertSize(Global.leticiaMood)
 	#Chama a função que carrega o dialogo
 	load_dialogo(false, "")
 	
-	if Global.LeticiaHumor > 7:
+	if Global.leticiaMood> 7:
 		$EmojiNeutro.hide()
 		$EmojiBravo.hide()
 		$LeticiaNpcDefinitivoBrava.hide()
 		$LeticiaNpcDefinitivoNeutro.hide()
-	if Global.LeticiaHumor <= 7 and Global.LeticiaHumor >= 3:
+	if Global.leticiaMood<= 7 and Global.leticiaMood>= 3:
 		$LeticiaNpcDefinitivoBrava.hide()
 		$LeticiaNpcDefinitivoNeutro.show()
 		$EmojiBravo.hide()
 		$EmojiNeutro.show()
-	if Global.LeticiaHumor < 3:
+	if Global.leticiaMood< 3:
 		$EmojiBravo.show()
 		$LeticiaNpcDefinitivoBrava.show()
 
 #Fnção que é executada em loop
 func _physics_process(delta):
-	Music.Volume = $HSlider.value
+	Music.volume = $HSlider.value
 	#Atualiza a variável de humor médio
-	Media = (Global.LeticiaHumor + Global.VictorHumor) / 2
-	Global.Media = Media
+	meanMood = (Global.leticiaMood+ Global.victorMood) / 2
+	Global.meanMood= meanMood
 	
-	if Global.LeticiaHumor > 7:
+	if Global.leticiaMood> 7:
 		$EmojiNeutro.hide()
 		$EmojiBravo.hide()
 		$LeticiaNpcDefinitivoBrava.hide()
 		$LeticiaNpcDefinitivoNeutro.hide()
-	if Global.LeticiaHumor <= 7 and Global.LeticiaHumor >= 3:
+	if Global.leticiaMood<= 7 and Global.leticiaMood>= 3:
 		$LeticiaNpcDefinitivoBrava.hide()
 		$LeticiaNpcDefinitivoNeutro.show()
 		$EmojiBravo.hide()
 		$EmojiNeutro.show()
-	if Global.LeticiaHumor < 3:
+	if Global.leticiaMood< 3:
 		$EmojiBravo.show()
 		$LeticiaNpcDefinitivoBrava.show()
 	
@@ -84,28 +84,28 @@ func _physics_process(delta):
 	if btnClicked :
 		HumSizeAnim.interpolate_property(
 			$HumorColor, "rect_size",
-			$HumorColor.rect_size, Vector2(56, convertSize(Global.LeticiaHumor)), 1,
+			$HumorColor.rect_size, Vector2(56, convertSize(Global.leticiaMood)), 1,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 		)
 		HumSizeAnim.start()
 		
 		HumColorAnim.interpolate_property(
 			$HumorColor, "color",
-			$HumorColor.color, Color(convertColorR(Global.LeticiaHumor), convertColorG(Global.LeticiaHumor), 0), 1,
+			$HumorColor.color, Color(convertColorR(Global.leticiaMood), convertColorG(Global.leticiaMood), 0), 1,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 		)
 		HumColorAnim.start()
 
 		MedSizeAnim.interpolate_property(
 			$HumorMedioColor, "rect_size",
-			$HumorMedioColor.rect_size, Vector2(56, convertSize(Global.Media)), 1,
+			$HumorMedioColor.rect_size, Vector2(56, convertSize(Global.meanMood)), 1,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 		)
 		MedSizeAnim.start()
 	
 		MedColorAnim.interpolate_property(
 			$HumorMedioColor, "color",
-			$HumorMedioColor.color, Color(convertColorR(Global.Media),convertColorG(Global.Media),0), 1,
+			$HumorMedioColor.color, Color(convertColorR(Global.meanMood),convertColorG(Global.meanMood),0), 1,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 		)
 		MedColorAnim.start()
@@ -117,7 +117,7 @@ func _physics_process(delta):
 		$Tutorial.hide()
 	elif active and Input.is_action_just_pressed("ui_accept") and haveChoices == false:
 			if finished:
-				if perdeu:
+				if loose:
 					get_tree().change_scene_to(load("res://Main.tscn"))
 				else:
 					load_dialogo(false, "")
@@ -130,7 +130,7 @@ func _physics_process(delta):
 func load_dialogo(res, resIndex):
 	
 	#Caso ainda não tenha passado por todos os textos do diálogo
-	if dialogo_index < text.size() and perdeu == false:
+	if dialogIndex < text.size() and loose == false:
 		if res == false:
 			#Define que a animação se iniciou
 			active = true
@@ -138,8 +138,8 @@ func load_dialogo(res, resIndex):
 			
 			#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 			$TextBox.visible = true
-			$TextBox/RichTextLabel.bbcode_text = text[dialogo_index]["Text"]
-			$TextBox/Label.text = text[dialogo_index]["Name"]
+			$TextBox/RichTextLabel.bbcode_text = text[dialogIndex]["Text"]
+			$TextBox/Label.text = text[dialogIndex]["Name"]
 			
 			#Torna a porcentagem do texto que está sendo exibido como 0
 			$TextBox/RichTextLabel.percent_visible = 0
@@ -152,7 +152,7 @@ func load_dialogo(res, resIndex):
 			$TextBox/Tween.start()
 			
 			#Caso o Array de alternativas contenha alguma opção a ser exibida 
-			if text[dialogo_index]["Choices"][0] != "":
+			if text[dialogIndex]["Choices"][0] != "":
 				#Cria uma nova instância da classe RandomNumberGenerator e atribui à variável anum
 				var anum = RandomNumberGenerator.new()
 				#Chama o método randomize() da instância de RandomNumberGenerator para inicializar o gerador de números aleatórios
@@ -170,11 +170,11 @@ func load_dialogo(res, resIndex):
 				haveChoices = true
 				#Exibe as alternativas e atribui os textos a elas
 				$CaixaResposta/Btn_A.show()
-				$CaixaResposta/Btn_A/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogo_index]["Choices"][a]
+				$CaixaResposta/Btn_A/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogIndex]["Choices"][a]
 				$CaixaResposta/Btn_B.show()
-				$CaixaResposta/Btn_B/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogo_index]["Choices"][b]
+				$CaixaResposta/Btn_B/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogIndex]["Choices"][b]
 				$CaixaResposta/Btn_C.show()
-				$CaixaResposta/Btn_C/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogo_index]["Choices"][c]
+				$CaixaResposta/Btn_C/RichTextLabel.bbcode_text = "[center] \n [center]" + text[dialogIndex]["Choices"][c]
 		else:
 			#Define que a animação se iniciou
 			active = true
@@ -182,8 +182,8 @@ func load_dialogo(res, resIndex):
 		
 			#Torna a caixa de texto visivel e atribui o texto a ser exibido à ela
 			$TextBox.visible = true
-			$TextBox/RichTextLabel.bbcode_text = text[dialogo_index - 1]["Response"][resIndex]
-			$TextBox/Label.text = text[dialogo_index - 1]["Name"]
+			$TextBox/RichTextLabel.bbcode_text = text[dialogIndex - 1]["Response"][resIndex]
+			$TextBox/Label.text = text[dialogIndex - 1]["Name"]
 		
 			#Torna a porcentagem do texto que está sendo exibido como 0
 			$TextBox/RichTextLabel.percent_visible = 0
@@ -194,7 +194,7 @@ func load_dialogo(res, resIndex):
 			)
 			#Inicia a animação
 			$TextBox/Tween.start()
-	elif perdeu:
+	elif loose:
 		#Define que a animação se iniciou
 		active = true
 		finished = false
@@ -213,7 +213,7 @@ func load_dialogo(res, resIndex):
 		)
 		#Inicia a animação
 		$TextBox/Tween.start()
-		perdeu = true
+		loose = true
 	else:
 		#Para de exibir a caixa de texto
 		$TextBox.visible = false
@@ -222,7 +222,7 @@ func load_dialogo(res, resIndex):
 		#Afirma que a animação finalizou
 		finished = true
 		active = false
-	dialogo_index += 1
+	dialogIndex += 1
 
 #Função que converte os pontos de humor para o valor referente ao tamanho da barra
 func convertSize (x):
@@ -250,15 +250,15 @@ func _on_Btn_A_pressed() -> void:
 	finished = true
 	#Define o que deve acontecer com o humor do personagem de acordo com a alternativa atribuida ao botão a
 	if a == 0:
-		Global.Ativa +=1
-		if Global.LeticiaHumor <= 8:
-			Global.LeticiaHumorr += 2
+		Global.assertive +=1
+		if Global.leticiaMood <= 8:
+			Global.leticiaMoodr += 2
 	elif a == 1:
-		Global.Passiva +=1
-		Global.LeticiaHumor -= 0
+		Global.passive +=1
+		Global.leticiaMood -= 0
 	else:
-		Global.PassivaAgressiva +=1
-		Global.LeticiaHumor -= 3
+		Global.passiveAgressive +=1
+		Global.leticiaMood -= 3
 	btnClicked = true
 	haveChoices = false
 
@@ -266,9 +266,9 @@ func _on_Btn_A_pressed() -> void:
 	$CaixaResposta/Btn_A.hide()
 	$CaixaResposta/Btn_B.hide()
 	$CaixaResposta/Btn_C.hide()
-	if Global.LeticiaHumor + Global.LeticiaHumor <= 0: perdeu = true
+	if Global.leticiaMood + Global.leticiaMood <= 0: loose = true
 	#Roda o próximo dialogo
-	if text[dialogo_index - 1]["Response"][0] != "":
+	if text[dialogIndex - 1]["Response"][0] != "":
 		load_dialogo(true, a)
 	else:
 		load_dialogo(false, null)
@@ -278,22 +278,22 @@ func _on_Btn_B_pressed() -> void:
 	$TextBox/RichTextLabel.percent_visible = 1
 	finished = true
 	if b == 0:
-		Global.Ativa +=1
-		if Global.LeticiaHumor <= 8:
-			Global.LeticiaHumor += 2
+		Global.assertive +=1
+		if Global.leticiaMood <= 8:
+			Global.leticiaMood += 2
 	elif b == 1:
-		Global.Passiva +=1
-		Global.LeticiaHumor -= 0
+		Global.passive +=1
+		Global.leticiaMood -= 0
 	else:
-		Global.PassivaAgressiva +=1
-		Global.LeticiaHumor -= 3
+		Global.passiveAgressive +=1
+		Global.leticiaMood -= 3
 	haveChoices = false
 	btnClicked = true
 	$CaixaResposta/Btn_A.hide()
 	$CaixaResposta/Btn_B.hide()
 	$CaixaResposta/Btn_C.hide()
-	if Global.VictorHumor + Global.LeticiaHumor <= 0: perdeu = true
-	if text[dialogo_index - 1]["Response"][0] != "":
+	if Global.victorMood+ Global.leticiaMood <= 0: loose = true
+	if text[dialogIndex - 1]["Response"][0] != "":
 		load_dialogo(true, b)
 	else:
 		load_dialogo(false, null)
@@ -303,22 +303,22 @@ func _on_Btn_C_pressed() -> void:
 	$TextBox/RichTextLabel.percent_visible = 1
 	finished = true
 	if c == 0:
-		Global.Ativa +=1
-		if Global.LeticiaHumor <= 8:
-			Global.LeticiaHumor += 2
+		Global.assertive +=1
+		if Global.leticiaMood <= 8:
+			Global.leticiaMood += 2
 	elif c == 1:
-		Global.Passiva +=1
-		Global.LeticiaHumor -= 0
+		Global.passive +=1
+		Global.leticiaMood -= 0
 	else:
-		Global.PassivaAgressiva +=1
-		Global.LeticiaHumor -= 3
+		Global.passiveAgressive +=1
+		Global.leticiaMood -= 3
 	btnClicked = true
 	haveChoices = false
 	$CaixaResposta/Btn_A.hide()
 	$CaixaResposta/Btn_B.hide()
 	$CaixaResposta/Btn_C.hide()
-	if Global.VictorHumor + Global.LeticiaHumor <= 0: perdeu = true
-	if text[dialogo_index - 1]["Response"][0] != "":
+	if Global.victorMood + Global.leticiaMood <= 0: loose = true
+	if text[dialogIndex - 1]["Response"][0] != "":
 		load_dialogo(true, c)
 	else:
 		load_dialogo(false, null)

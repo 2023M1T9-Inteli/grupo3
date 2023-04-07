@@ -4,10 +4,10 @@ onready var page = [$CNV, $CEL, $CERC]
 var aPage = 0
 
 func _ready() -> void:
-	$HSlider.value = Music.Volume
+	$HSlider.value = Music.volume
 
 func _process(delta: float) -> void:
-	Music.Volume = $HSlider.value
+	Music.volume = $HSlider.value
 	for i in page:
 		i.hide()
 	page[aPage].show()

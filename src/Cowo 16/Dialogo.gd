@@ -1,7 +1,7 @@
 extends Node
 
 #Variável que armazena um dicionário com o roteiro da cena 1
-var dialogo_1 = [
+var dialog1 = [
 	{
 		"Name": "Letícia",
 		"Choices": [""],
@@ -51,7 +51,7 @@ var dialogo_1 = [
 ]
 
 #Variável que armazena um dicionário com o roteiro da cena 2
-var dialogo_2 = [
+var dialog2 = [
 	{
 		"Name": "Victor",
 		"Choices": [""],
@@ -104,7 +104,7 @@ var dialogo_2 = [
 ]
 
 #Variável que armazena um dicionário com o roteiro da cena 3
-var dialogo_3 = [
+var dialog3 = [
 	{
 		"Name": "Letícia",
 		"Choices": [
@@ -141,7 +141,7 @@ var dialogo_3 = [
 		"Response": [""],
 	},
 ]
-var dialogo_4 = [ #Armazena diálogo 4
+var dialog4 = [ #Armazena diálogo 4
 	{
 		"Name": "Letícia",
 		"Choices": [""],
@@ -163,7 +163,7 @@ var dialogo_4 = [ #Armazena diálogo 4
 
 ]
 
-var dialogo_5 = [ #Armazena diálogo 5
+var dialog5 = [ #Armazena diálogo 5
 	{
 		"Name": "Victor",
 		"Choices": [
@@ -252,7 +252,7 @@ var dialogo_5 = [ #Armazena diálogo 5
 		"Response": [""],
 		}
 ]
-var dialogo_6 = [ #Armazena o dialogo 6
+var dialog6 = [ #Armazena o dialogo 6
 	{
 		"Name": "Letícia",
 		"Choices": [
@@ -283,7 +283,7 @@ var dialogo_6 = [ #Armazena o dialogo 6
 		"Response": [""],
 	}
 ]
-var dialogo_7 = [ #Armazena diálogo 7
+var dialog7 = [ #Armazena diálogo 7
 	{
 		"Name": "Sr. Facundes",
 		"Choices": [""],
@@ -319,7 +319,7 @@ var dialogo_7 = [ #Armazena diálogo 7
 	
 
 ]
-var dialogo_8 = [ #Armazena diálogo 8
+var dialog8 = [ #Armazena diálogo 8
 	{
 		"Name": "Simon",
 		"Choices": [
@@ -363,7 +363,7 @@ var dialogo_8 = [ #Armazena diálogo 8
 	
 
 ]
-var dialogo_9 = [ #Armazena diálogo 9
+var dialog9 = [ #Armazena diálogo 9
 	{
 		"Name": "Simon",
 		"Choices": [
@@ -380,7 +380,7 @@ var dialogo_9 = [ #Armazena diálogo 9
 ]
 
 
-var dialogo_10 = [
+var dialog10 = [
 	{
 		"Name": "Simon",
 		"Choices": [
@@ -407,7 +407,7 @@ var dialogo_10 = [
 	},
 ]
 
-var dialogo_11 = [
+var dialog11 = [
 	{
 		"Name": "Victor",
 		"Choices": [
@@ -452,7 +452,7 @@ var dialogo_11 = [
 	},
 ]
 
-var dialogo_12 = [
+var dialog12 = [
 	{
 		"Name": "Sr. Facundes",
 		"Choices": [
@@ -482,7 +482,7 @@ var dialogo_12 = [
 	
 ]
 
-var dialogo_13 = [
+var dialog13 = [
 	{
 		"Name": "Sr. Facundes",
 		"Choices": [
@@ -506,7 +506,7 @@ var dialogo_13 = [
 		"Response": ["",],
 	},
 ]
-var cutscene_1 = [
+var cutscene1 = [
 
 	{
 		"Name": "Sr. Facundes",
@@ -528,7 +528,7 @@ var cutscene_1 = [
 	},
 ]
 
-var cutscene_2 = [
+var cutscene2 = [
 	{
 		"Name": "Victor",
 		"Text": "Boa tarde Simon, tenho essa apresentação urgente para você desenvolver, preciso para hoje.",
@@ -561,4 +561,4 @@ var cutscene_2 = [
 	},
 ]
 
-var perdeu = ""
+var loose = ""

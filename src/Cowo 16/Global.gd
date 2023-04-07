@@ -1,19 +1,19 @@
 extends Node
 
 #variavel global que define o nivel de humor de Leticia
-var LeticiaHumor: float = 10.00
+var leticiaMood: float = 10.00
 #variavel global que define o nivel de humor de Victor
-var VictorHumor: float = 10.00
+var victorMood: float = 10.00
 #variavel global que define o nivel de humor de SrFacundes
-var SrFacundesHumor: float = 10.00
+var facundesMood: float = 10.00
 #variavel global que define o nivel de humor de Simon
-var SimonHumor: float = 10.00
+var simonMood: float = 10.00
 #variavel global que define o nivel de humor médio do escritório
-var Media: float = 10.00
+var meanMood: float = 10.00
 
-var fase: int = 1
+var level: int = 1
 
 
-var Passiva: int = 0
-var PassivaAgressiva: int = 0
-var Ativa: int = 0
+var passive: int = 0
+var passiveAgressive: int = 0
+var assertive: int = 0

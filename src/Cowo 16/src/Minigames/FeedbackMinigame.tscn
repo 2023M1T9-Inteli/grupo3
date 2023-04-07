@@ -5,26 +5,26 @@
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
-var total = Global.Ativa + Global.Passiva + Global.PassivaAgressiva
+var total = Global.assertive + Global.passive + Global.passiveAgressive
 
 func _ready() -> void:
-	$Assertiva.text = str(Global.Ativa)
+	$Assertiva.text = str(Global.assertive)
 	$BarraAs/Tween.interpolate_property(
-		$BarraAs, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.Ativa, 65), 3, 
+		$BarraAs, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.assertive, 65), 3, 
 		Tween.TRANS_LINEAR, Tween.EASE_OUT
 	)
 	$BarraAs/Tween.start()
 	
-	$Passiva.text = str(Global.Passiva)
+	$Passiva.text = str(Global.passive)
 	$BarraP/Tween.interpolate_property(
-		$BarraP, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.Passiva, 65), 3, 
+		$BarraP, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.passive, 65), 3, 
 		Tween.TRANS_LINEAR, Tween.EASE_OUT
 	)
 	$BarraP/Tween.start()
 	
-	$PassivoAgressivas.text = str(Global.PassivaAgressiva)
+	$PassivoAgressivas.text = str(Global.passiveAgressive)
 	$BarraAg/Tween.interpolate_property(
-		$BarraAg, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.PassivaAgressiva, 65), 3, 
+		$BarraAg, \"rect_size\", Vector2(0, 65), Vector2((500 / total) * Global.passiveAgressive, 65), 3, 
 		Tween.TRANS_LINEAR, Tween.EASE_OUT
 	)
 	$BarraAg/Tween.start()
@@ -35,16 +35,16 @@ func _ready() -> void:
 	)
 	$RichTextLabel/Tween.start()
 	
-	if Global.Ativa > Global.Passiva and Global.Ativa > Global.PassivaAgressiva:
+	if Global.assertive > Global.passive and Global.assertive > Global.passiveAgressive:
 		$RichTextLabel.text = \"Seu desempenho mais recente na CoWo mostrou que sua comunicação é principalmente assertiva. Parabéns! É importante que você continue se desenvolvendo para manter sua comunicação assertiva e as interações de trabalho positivas.\"
-	if Global.Passiva > Global.PassivaAgressiva and Global.Passiva > Global.Ativa:
-		$RichTextLabel.text = \"Com base em seu último desempenho na CoWo, notamos que sua comunicação tem sido predominantemente passiva. É importante ressaltar que uma comunicação assertiva poderia melhorar a clareza e efetividade das suas mensagens. Desse modo, é importante que você tente desenvolver a confiança na hora de expressar suas ideias, aprimorando suas habilidades de comunicação e melhorando suas interações no trabalho.\"
-	if Global.PassivaAgressiva > Global.Passiva and Global.PassivaAgressiva > Global.Ativa:
+	if Global.passive > Global.passiveAgressive and Global.passive > Global.assertive:
+		$RichTextLabel.text = \"Com base em seu último desempenho na CoWo, notamos que sua comunicação tem sido predominantemente passive. É importante ressaltar que uma comunicação assertiva poderia melhorar a clareza e efetividade das suas mensagens. Desse modo, é importante que você tente desenvolver a confiança na hora de expressar suas ideias, aprimorando suas habilidades de comunicação e melhorando suas interações no trabalho.\"
+	if Global.passiveAgressive > Global.passive and Global.passiveAgressive > Global.assertive:
 		$RichTextLabel.text = \"A partir da análise do seu desempenho mais recente na CoWo, percebemos que sua comunicação é predominantemente passiva-agressiva. É importante destacar que essa forma de comunicação pode ser prejudicial para as interações de trabalho e para a sua imagem profissional. Desse modo, praticar uma comunicação mais direta e transparente pode ser fundamental para se expressar de forma assertiva e se tornar um profissional ainda mais competente.\"
 
 
 func _on_TextureButton_pressed() -> void:
-	if Global.fase == 1:
+	if Global.level == 1:
 		get_tree().change_scene(\"res://src/Facundes/Cena1Facundes.tscn\")
 	else:
 		get_tree().change_scene(\"res://Final.tscn\")
