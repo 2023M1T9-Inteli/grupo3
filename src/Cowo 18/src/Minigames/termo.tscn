@@ -1,0 +1,372 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/minigame termo/termo.png" type="Texture" id=1]
+[ext_resource path="res://src/Minigames/termo.gd" type="Script" id=2]
+[ext_resource path="res://ARIAL.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://src/HUD/UiLivro.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/UI/Som.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+extra_spacing_top = -16
+extra_spacing_bottom = -16
+extra_spacing_char = -16
+extra_spacing_space = -16
+font_data = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 2.27897, 1.9194 )
+script = ExtResource( 2 )
+
+[node name="Termo" type="Sprite" parent="."]
+position = Vector2( 548.424, 307.294 )
+scale = Vector2( 0.548563, 0.512156 )
+texture = ExtResource( 1 )
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 116.703
+margin_right = 339.23
+margin_bottom = 174.703
+rect_pivot_offset = Vector2( 192, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 116.703
+margin_right = 404.632
+margin_bottom = 174.703
+rect_pivot_offset = Vector2( 112, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit3" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 116.703
+margin_right = 470.034
+margin_bottom = 174.703
+rect_pivot_offset = Vector2( 32, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit4" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 116.703
+margin_right = 535.436
+margin_bottom = 174.703
+rect_pivot_offset = Vector2( -48, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit5" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 116.703
+margin_right = 600.839
+margin_bottom = 174.703
+rect_pivot_offset = Vector2( -128, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit6" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 183.521
+margin_right = 339.23
+margin_bottom = 241.521
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit7" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 182.618
+margin_right = 404.632
+margin_bottom = 240.618
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit8" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 182.618
+margin_right = 470.034
+margin_bottom = 240.618
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit9" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 182.618
+margin_right = 535.436
+margin_bottom = 240.618
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit10" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 182.618
+margin_right = 600.839
+margin_bottom = 240.618
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit11" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 250.338
+margin_right = 339.23
+margin_bottom = 308.338
+rect_pivot_offset = Vector2( 192, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit12" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 248.532
+margin_right = 404.632
+margin_bottom = 306.532
+rect_pivot_offset = Vector2( 112, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit13" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 248.532
+margin_right = 470.034
+margin_bottom = 306.532
+rect_pivot_offset = Vector2( 32, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit14" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 248.532
+margin_right = 535.436
+margin_bottom = 306.532
+rect_pivot_offset = Vector2( -48, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit15" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 248.532
+margin_right = 600.839
+margin_bottom = 306.532
+rect_pivot_offset = Vector2( -128, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit16" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 314.446
+margin_right = 339.23
+margin_bottom = 372.446
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit17" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 314.446
+margin_right = 404.632
+margin_bottom = 372.446
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit18" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 314.446
+margin_right = 470.034
+margin_bottom = 372.446
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit19" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 314.446
+margin_right = 535.436
+margin_bottom = 372.446
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit20" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 314.446
+margin_right = 600.839
+margin_bottom = 372.446
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit21" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 380.36
+margin_right = 339.23
+margin_bottom = 438.36
+rect_pivot_offset = Vector2( 192, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit22" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 380.36
+margin_right = 404.632
+margin_bottom = 438.36
+rect_pivot_offset = Vector2( 112, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit23" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 380.36
+margin_right = 470.034
+margin_bottom = 438.36
+rect_pivot_offset = Vector2( 32, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit24" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 380.36
+margin_right = 535.436
+margin_bottom = 438.36
+rect_pivot_offset = Vector2( -48, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit25" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 380.36
+margin_right = 600.839
+margin_bottom = 438.36
+rect_pivot_offset = Vector2( -128, 216 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit26" type="LineEdit" parent="."]
+margin_left = 281.23
+margin_top = 446.274
+margin_right = 339.23
+margin_bottom = 504.274
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit27" type="LineEdit" parent="."]
+margin_left = 346.632
+margin_top = 445.371
+margin_right = 404.632
+margin_bottom = 503.371
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit28" type="LineEdit" parent="."]
+margin_left = 412.034
+margin_top = 445.371
+margin_right = 470.034
+margin_bottom = 503.371
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit29" type="LineEdit" parent="."]
+margin_left = 477.436
+margin_top = 445.371
+margin_right = 535.436
+margin_bottom = 503.371
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="LineEdit30" type="LineEdit" parent="."]
+margin_left = 542.839
+margin_top = 445.371
+margin_right = 600.839
+margin_bottom = 503.371
+custom_fonts/font = SubResource( 1 )
+align = 1
+max_length = 1
+
+[node name="Label" type="Label" parent="."]
+margin_left = 621.321
+margin_top = 191.151
+margin_right = 814.321
+margin_bottom = 386.151
+rect_scale = Vector2( 1.2, 1.2 )
+text = "Descubra a palavra certa em 6
+tentativas! Depois de cada
+tentativa, as peças mostram
+o quão perto você está da
+resposta.
+
+AMARELO: A letra está certa,
+mas a posição está errada!
+
+VERDE: A letra está certa e a
+posição está certa!"
+align = 1
+
+[node name="Feedback" type="Label" parent="."]
+margin_left = 345.77
+margin_top = 76.0654
+margin_right = 440.77
+margin_bottom = 90.0654
+rect_scale = Vector2( 2, 2 )
+text = "Digite a senha"
+align = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="HSlider" type="HSlider" parent="."]
+visible = false
+margin_left = 985.533
+margin_top = 80.7544
+margin_right = 1190.53
+margin_bottom = 96.7544
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 15
+size_flags_stretch_ratio = 0.0
+min_value = -50.0
+max_value = -4.0
+value = -4.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 1016.69
+margin_top = 21.3608
+margin_right = 1098.69
+margin_bottom = 103.361
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="UiLivro" parent="." instance=ExtResource( 4 )]
+margin_left = -1252.76
+margin_top = -14.0669
+margin_right = -1252.76
+margin_bottom = -14.0669
+rect_scale = Vector2( 0.5, 0.5 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/UI/livro.png" type="Texture" id=1]
+[ext_resource path="res://UiLivro.gd" type="Script" id=2]
+[ext_resource path="res://src/HUD/Livro.tscn" type="PackedScene" id=3]
+
+[node name="UiLivro" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 2235, 57 )
+script = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 2186.0
+margin_top = 11.0
+margin_right = 2271.0
+margin_bottom = 96.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 1 )
+
+[node name="Node2D" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

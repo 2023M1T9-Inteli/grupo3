@@ -1,0 +1,295 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/UI/barrahumor_720.png" type="Texture" id=1]
+[ext_resource path="res://assets/UI/Caixa_Resposta.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/barrahumor_escritorio.png" type="Texture" id=3]
+[ext_resource path="res://assets/UI/caixa_texto_g_720.png" type="Texture" id=4]
+[ext_resource path="res://src/Simon/ControlC2Simon.gd" type="Script" id=5]
+[ext_resource path="res://assets/Person/Simon/simon_npc_definitivo.png" type="Texture" id=6]
+[ext_resource path="res://assets/Person/Cenário/cenário_nn.png" type="Texture" id=7]
+[ext_resource path="res://Dialogo.gd" type="Script" id=8]
+[ext_resource path="res://assets/UI/button_default.png" type="Texture" id=9]
+[ext_resource path="res://assets/UI/button_pressed.png" type="Texture" id=10]
+[ext_resource path="res://assets/Person/Simon/simon_npc_neutro.png" type="Texture" id=11]
+[ext_resource path="res://assets/UI/caixinha_texto.png" type="Texture" id=12]
+[ext_resource path="res://assets/UI/emoji_neutro.png" type="Texture" id=13]
+[ext_resource path="res://assets/UI/emoji_bravo.png" type="Texture" id=14]
+[ext_resource path="res://assets/Person/Simon/simon_npc_bravo.png" type="Texture" id=15]
+[ext_resource path="res://src/HUD/UiLivro.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/UI/frase_livro_treinamentos.png" type="Texture" id=18]
+[ext_resource path="res://assets/UI/seta_branca.png" type="Texture" id=20]
+[ext_resource path="res://assets/UI/papel_circulo.png" type="Texture" id=22]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CenárioNn" type="Sprite" parent="."]
+position = Vector2( 1250, 455 )
+scale = Vector2( 1.00401, 1.01111 )
+texture = ExtResource( 7 )
+
+[node name="SimonNpcDefinitivo" type="Sprite" parent="."]
+position = Vector2( 443, 533 )
+texture = ExtResource( 6 )
+
+[node name="Dialogo" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 1269, 592 )
+script = ExtResource( 5 )
+
+[node name="SimonNpcDefinitivoNeutro" type="Sprite" parent="Control"]
+position = Vector2( 443, 533 )
+texture = ExtResource( 11 )
+
+[node name="SimonNpcDefinitivoBravo" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 444, 533 )
+texture = ExtResource( 15 )
+
+[node name="HumorMedioColor" type="ColorRect" parent="Control"]
+margin_left = 1133.0
+margin_top = 113.0
+margin_right = 1189.0
+margin_bottom = 438.0
+rect_rotation = 270.0
+color = Color( 0, 1, 0, 1 )
+
+[node name="MediaSize_anim" type="Tween" parent="Control/HumorMedioColor"]
+
+[node name="MediaColor_anim" type="Tween" parent="Control/HumorMedioColor"]
+
+[node name="BarrahumorMedio" type="Sprite" parent="Control/HumorMedioColor"]
+position = Vector2( 26.8568, 109.5 )
+rotation = 1.5708
+scale = Vector2( 0.465932, 0.450177 )
+texture = ExtResource( 3 )
+
+[node name="HumorColor" type="ColorRect" parent="Control"]
+margin_left = 181.0
+margin_top = 534.0
+margin_right = 237.0
+margin_bottom = 859.0
+rect_rotation = 180.0
+color = Color( 0, 1, 0, 1 )
+
+[node name="HumorSize_anim" type="Tween" parent="Control/HumorColor"]
+
+[node name="HumorColor_anim" type="Tween" parent="Control/HumorColor"]
+
+[node name="Barrahumor" type="Sprite" parent="Control/HumorColor"]
+position = Vector2( 27, 127 )
+rotation = 3.14159
+scale = Vector2( 0.610465, 0.610465 )
+texture = ExtResource( 1 )
+
+[node name="TextBox" type="Sprite" parent="Control"]
+position = Vector2( 952, 310 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Control/TextBox"]
+margin_left = -259.0
+margin_top = -113.0
+margin_right = -216.0
+margin_bottom = -95.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.34902, 0.266667, 0.266667, 1 )
+text = "Name"
+align = 1
+valign = 1
+
+[node name="Tween" type="Tween" parent="Control/TextBox"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TextBox"]
+margin_left = -257.0
+margin_top = -63.0
+margin_right = 23.0
+margin_bottom = 17.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+
+[node name="CaixinhaTexto" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 2354, 535 )
+rotation = 1.57079
+scale = Vector2( 0.535788, 0.535788 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene" type="Button" parent="Control/CaixinhaTexto"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -1160.9
+margin_top = -948.143
+margin_right = 1387.1
+margin_bottom = 1795.86
+text = "AAAAAAAAAAAAAA"
+
+[node name="PapelCirculo" type="Sprite" parent="Control/CaixinhaTexto"]
+position = Vector2( 69.0572, 22.3975 )
+rotation = -1.57079
+scale = Vector2( 0.519094, 0.519094 )
+texture = ExtResource( 22 )
+
+[node name="EmojiNeutro" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 155, 577 )
+scale = Vector2( 0.456108, 0.456108 )
+texture = ExtResource( 13 )
+
+[node name="EmojiBravo" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 155, 577 )
+scale = Vector2( 0.456108, 0.456108 )
+texture = ExtResource( 14 )
+
+[node name="HSlider" type="HSlider" parent="Control"]
+visible = false
+margin_left = 2235.0
+margin_top = 120.0
+margin_right = 2440.0
+margin_bottom = 136.0
+size_flags_horizontal = 15
+size_flags_stretch_ratio = 0.0
+min_value = -50.0
+max_value = -4.0
+value = -4.0
+
+[node name="Tutorial" type="ColorRect" parent="Control"]
+visible = false
+margin_right = 2502.0
+margin_bottom = 903.0
+color = Color( 0.0235294, 0.0235294, 0.0235294, 0.584314 )
+
+[node name="SetaBranca" type="Sprite" parent="Control/Tutorial"]
+position = Vector2( 2164, 136 )
+rotation = -2.8798
+scale = Vector2( 0.392934, 0.392934 )
+texture = ExtResource( 20 )
+
+[node name="FraseLivroTreinamentos" type="Sprite" parent="Control/Tutorial"]
+position = Vector2( 1952, 139 )
+scale = Vector2( 0.392934, 0.392934 )
+texture = ExtResource( 18 )
+
+[node name="CaixaResposta" type="Sprite" parent="Control"]
+position = Vector2( 91.9999, 959 )
+scale = Vector2( 1.30221, 1.22706 )
+texture = ExtResource( 2 )
+offset = Vector2( 889.258, 62.7516 )
+
+[node name="Btn_A" type="TextureButton" parent="Control/CaixaResposta"]
+visible = false
+use_parent_material = true
+margin_left = -11.5188
+margin_top = -45.6375
+margin_right = 528.481
+margin_bottom = 171.363
+grow_vertical = 2
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/CaixaResposta/Btn_A"]
+process_priority = -4
+use_parent_material = true
+margin_left = 521.421
+margin_top = -4.88519
+margin_right = 838.421
+margin_bottom = 76.1148
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 985.18, -98.2942 )
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]
+[center]
+
+"
+meta_underlined = false
+tab_size = 7
+text = "
+
+
+"
+scroll_following = true
+deselect_on_focus_loss_enabled = false
+
+[node name="Btn_B" type="TextureButton" parent="Control/CaixaResposta"]
+visible = false
+margin_left = 589.767
+margin_top = -45.6375
+margin_right = 1129.77
+margin_bottom = 171.363
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/CaixaResposta/Btn_B"]
+process_priority = -4
+use_parent_material = true
+margin_left = 523.725
+margin_top = -4.07104
+margin_right = 840.725
+margin_bottom = 76.929
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 985.18, -98.2942 )
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]
+[center]
+
+"
+meta_underlined = false
+tab_size = 7
+text = "
+
+
+"
+scroll_following = true
+deselect_on_focus_loss_enabled = false
+
+[node name="Btn_C" type="TextureButton" parent="Control/CaixaResposta"]
+visible = false
+margin_left = 1195.66
+margin_top = -45.6375
+margin_right = 1735.66
+margin_bottom = 171.362
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/CaixaResposta/Btn_C"]
+process_priority = -4
+use_parent_material = true
+margin_left = 519.886
+margin_top = -4.88519
+margin_right = 836.886
+margin_bottom = 76.1148
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 985.18, -98.2942 )
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]
+[center]
+
+"
+meta_underlined = false
+tab_size = 7
+text = "
+
+
+"
+scroll_following = true
+deselect_on_focus_loss_enabled = false
+
+[node name="UiLivro" parent="." instance=ExtResource( 16 )]
+
+[connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="Control/CaixinhaTexto/Cutscene" to="Control" method="_on_Cutscene_pressed"]
+[connection signal="pressed" from="Control/CaixaResposta/Btn_A" to="Control" method="_on_Btn_A_pressed"]
+[connection signal="pressed" from="Control/CaixaResposta/Btn_B" to="Control" method="_on_Btn_B_pressed"]
+[connection signal="pressed" from="Control/CaixaResposta/Btn_C" to="Control" method="_on_Btn_C_pressed"]
