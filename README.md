@@ -17,7 +17,7 @@
 📜 Um jogo no estilo "visual novel" com o objetivo de ensinar comunicação.
 <br><br>
 <p align="center">
-<img src="./imagens/Cowo.png" alt="COWO" border="10px">
+<img src="./imagens/Cowo.png" alt="COWO" border="10">
 </p>
 
 
