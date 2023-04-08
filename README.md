@@ -6,29 +6,25 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# COWO
 
-## Nome do Grupo
+## SkillShapers
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/paulooctaviodepaula/">Paulo Octavio de Paula</a>, <a>Bruno Discacciati Vieiralves Martins</a>, <a href="https://www.linkedin.com/in/leonardoalvesnunes/">	Leonardo Alves Nunes</a>, <a href="https://www.linkedin.com/in/lucasdasilvabarbosa/">	Lucas da Silva Barbosa</a>, <a href="https://github.com/MatthiasCecchiniGuernet">	Matthias Cecchini Guernet</a>, <a href="https://github.com/Paula-zp">		Paula Zanella Piva</a>, <a href="https://www.linkedin.com/in/rafaella-bianca-cavalcante/">		Rafaella Bianca Cavalcante</a>
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
-<br><br>
-Meu projeto é um exemplo de como utilizar o github.
+📜 Um jogo no estilo "visual novel" com o objetivo de ensinar comunicação.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="./imagens/Cowo.png" alt="COWO" border="10">
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
+💡<p>
+
+</p> O projeto do jogo CoWo foi criado como uma ferramenta para modernizar o treinamento de comunicação fornecido pela Cia de Talentos. O enredo e os personagens foram desenvolvidos para se alinhar aos objetivos do treinamento, com diálogos e tarefas que ajudam a aprimorar as habilidades do jogador. 
+O jogo foi pensado para ser uma ferramenta de treinamento interativo, que pudesse engajar e motivar os jogadores a participar do treinamento. Para isso, foram considerados os interesses pessoais do público-alvo e os desafios que eles enfrentam no ambiente corporativo.
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -105,6 +101,16 @@ A cada atualização os detalhes devem ser lançados aqui.
     * MUDANÇA: Renomeia `foo()` para `bar()`
 * 0.0.1 - 01/01/2022
     * Trabalho em andamento
+* 0.1 - 10/02/2023
+    * Primeira implementação do mecanismo de fala
+* 0.2 - 24/02/2023
+    * Primeira implementação do mecanismo de humor dos personagens
+* 0.4 - 10/03/2023
+    * Primeira implementação dos personagens e a base do fluxo de jogo e minigames
+* 0.8 - 24/03/2023
+    * implementação da narrativa e do sistema multisensorial
+* 1.0 - 10/04/2023
+    * Ajuste de bugs e melhoria design
 
 ## 📋 Licença/License
 
@@ -114,8 +120,9 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. <https://www.investopedia.com/terms/p/porter.asp>
+2. <https://www.investopedia.com/terms/s/swot.asp>
+3. <https://www.totvs.com/blog/negocios/analise-swot/>
+4. <https://www.youtube.com/watch?v=ReM1uqmVfP0/>
+5. <https://www.b2binternational.com/research/methods/faq/what-is-the-value-proposition-canvas>
+6. <https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto>
