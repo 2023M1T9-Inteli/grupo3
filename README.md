@@ -1,9 +1,7 @@
-# Inteli - Instituto de Tecnologia e Liderança 
-# Scrip de exemplo, modifique de acordo com seu grupo #
-
+# Inteli - Instituto de Tecnologia e Liderança
 
 <p align="center">
-<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://www.inteli.edu.br/"><img src="https://s3.amazonaws.com/gupy5/production/companies/26702/career/63484/images/2022-04-28_16-56_logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # COWO
@@ -14,14 +12,13 @@
 
 ## Descrição
 
-📜 Um jogo no estilo "visual novel" com o objetivo de ensinar comunicação.
-<br>
-
-💡<p>
-
 </p> O projeto do jogo CoWo foi criado como uma ferramenta para modernizar o treinamento de comunicação fornecido pela Cia de Talentos. O enredo e os personagens foram desenvolvidos para se alinhar aos objetivos do treinamento, com diálogos e tarefas que ajudam a aprimorar as habilidades do jogador. 
 O jogo foi pensado para ser uma ferramenta de treinamento interativo, que pudesse engajar e motivar os jogadores a participar do treinamento. Para isso, foram considerados os interesses pessoais do público-alvo e os desafios que eles enfrentam no ambiente corporativo.
 <br><br>
+
+## 🎮 Jogue agora
+
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [SkillShapers](https://2023m1t9-inteli.github.io/grupo3/)
 
 ## 🛠 Estrutura de pastas
 
